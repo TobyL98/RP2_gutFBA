@@ -1,0 +1,623 @@
+,metabolite_id,metabolite_name,cross_feeding,produced_by,consumed_by
+0,_26dap_M_medium,"meso-2,6-Diaminoheptanedioate",False,[],['Bacteroides_uniformis_ATCC_8492']
+1,_4abut_medium,4-Aminobutanoate,False,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",[]
+2,C02528_medium,chenodeoxycholate,False,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",[]
+3,MGlcn100_medium,mucin-type O-glycan No 100,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+4,MGlcn100_rl_medium,released mucin-type O-glycan No 100,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+5,MGlcn101_medium,mucin-type O-glycan No 101,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+6,MGlcn101_rl_medium,released mucin-type O-glycan No 101,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+7,MGlcn102_medium,mucin-type O-glycan No 102,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+8,MGlcn102_rl_medium,released mucin-type O-glycan No 102,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+9,MGlcn103_medium,mucin-type O-glycan No 103,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+10,MGlcn103_rl_medium,released mucin-type O-glycan No 103,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+11,MGlcn104_medium,mucin-type O-glycan No 104,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+12,MGlcn104_rl_medium,released mucin-type O-glycan No 104,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+13,MGlcn105_medium,mucin-type O-glycan No 105,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+14,MGlcn105_rl_medium,released mucin-type O-glycan No 105,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+15,MGlcn106_medium,mucin-type O-glycan No 106,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+16,MGlcn106_rl_medium,released mucin-type O-glycan No 106,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+17,MGlcn107_medium,mucin-type O-glycan No 107,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+18,MGlcn107_rl_medium,released mucin-type O-glycan No 107,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+19,MGlcn108_medium,mucin-type O-glycan No 108,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+20,MGlcn108_rl_medium,released mucin-type O-glycan No 108,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+21,MGlcn109_medium,mucin-type O-glycan No 109,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+22,MGlcn109_rl_medium,released mucin-type O-glycan No 109,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+23,MGlcn10_medium,mucin-type O-glycan No 10,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+24,MGlcn10_rl_medium,released mucin-type O-glycan No 10,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+25,MGlcn110_medium,mucin-type O-glycan No 110,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+26,MGlcn110_rl_medium,released mucin-type O-glycan No 110,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+27,MGlcn111_medium,mucin-type O-glycan No 111,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+28,MGlcn111_rl_medium,released mucin-type O-glycan No 111,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+29,MGlcn112_medium,mucin-type O-glycan No 112,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+30,MGlcn112_rl_medium,released mucin-type O-glycan No 112,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+31,MGlcn113_medium,mucin-type O-glycan No 113,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+32,MGlcn113_rl_medium,released mucin-type O-glycan No 113,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+33,MGlcn114_medium,mucin-type O-glycan No 114,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+34,MGlcn114_rl_medium,released mucin-type O-glycan No 114,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+35,MGlcn115_medium,mucin-type O-glycan No 115,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+36,MGlcn115_rl_medium,released mucin-type O-glycan No 115,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+37,MGlcn116_medium,mucin-type O-glycan No 116,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+38,MGlcn116_rl_medium,released mucin-type O-glycan No 116,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+39,MGlcn117_medium,mucin-type O-glycan No 117,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+40,MGlcn117_rl_medium,released mucin-type O-glycan No 117,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+41,MGlcn118_medium,mucin-type O-glycan No 118,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+42,MGlcn118_rl_medium,released mucin-type O-glycan No 118,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+43,MGlcn119_medium,mucin-type O-glycan No 119,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+44,MGlcn119_rl_medium,released mucin-type O-glycan No 119,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+45,MGlcn120_medium,mucin-type O-glycan No 120,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+46,MGlcn120_rl_medium,released mucin-type O-glycan No 120,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+47,MGlcn121_medium,mucin-type O-glycan No 121,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+48,MGlcn121_rl_medium,released mucin-type O-glycan No 121,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+49,MGlcn122_medium,mucin-type O-glycan No 122,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+50,MGlcn122_rl_medium,released mucin-type O-glycan No 122,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+51,MGlcn123_medium,mucin-type O-glycan No 123,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+52,MGlcn123_rl_medium,released mucin-type O-glycan No 123,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+53,MGlcn124_medium,mucin-type O-glycan No 124,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+54,MGlcn124_rl_medium,released mucin-type O-glycan No 124,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+55,MGlcn126_medium,mucin-type O-glycan No 126,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+56,MGlcn126_rl_medium,released mucin-type O-glycan No 126,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+57,MGlcn127_medium,mucin-type O-glycan No 127,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+58,MGlcn127_rl_medium,released mucin-type O-glycan No 127,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+59,MGlcn128_medium,mucin-type O-glycan No 128,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+60,MGlcn128_rl_medium,released mucin-type O-glycan No 128,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+61,MGlcn129_medium,mucin-type O-glycan No 129,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+62,MGlcn129_rl_medium,released mucin-type O-glycan No 129,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+63,MGlcn12_medium,mucin-type O-glycan No 12,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+64,MGlcn12_rl_medium,released mucin-type O-glycan No 12,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+65,MGlcn130_medium,mucin-type O-glycan No 130,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+66,MGlcn130_rl_medium,released mucin-type O-glycan No 130,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+67,MGlcn131_medium,mucin-type O-glycan No 131,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+68,MGlcn131_rl_medium,released mucin-type O-glycan No 131,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+69,MGlcn132_medium,mucin-type O-glycan No 132,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+70,MGlcn132_rl_medium,released mucin-type O-glycan No 132,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+71,MGlcn133_medium,mucin-type O-glycan No 133,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+72,MGlcn133_rl_medium,released mucin-type O-glycan No 133,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+73,MGlcn134_medium,mucin-type O-glycan No 134,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+74,MGlcn134_rl_medium,released mucin-type O-glycan No 134,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+75,MGlcn135_medium,mucin-type O-glycan No 135,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+76,MGlcn135_rl_medium,released mucin-type O-glycan No 135,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+77,MGlcn136_medium,mucin-type O-glycan No 136,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+78,MGlcn136_rl_medium,released mucin-type O-glycan No 136,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+79,MGlcn137_medium,mucin-type O-glycan No 137,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+80,MGlcn137_rl_medium,released mucin-type O-glycan No 137,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+81,MGlcn138_medium,mucin-type O-glycan No 138,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+82,MGlcn138_rl_medium,released mucin-type O-glycan No 138,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+83,MGlcn139_medium,mucin-type O-glycan No 139,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+84,MGlcn139_rl_medium,released mucin-type O-glycan No 139,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+85,MGlcn13_medium,mucin-type O-glycan No 13,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+86,MGlcn13_rl_medium,released mucin-type O-glycan No 13,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+87,MGlcn140_medium,mucin-type O-glycan No 140,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+88,MGlcn140_rl_medium,released mucin-type O-glycan No 140,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+89,MGlcn141_medium,mucin-type O-glycan No 141,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+90,MGlcn141_rl_medium,released mucin-type O-glycan No 141,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+91,MGlcn142_medium,mucin-type O-glycan No 142,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+92,MGlcn142_rl_medium,released mucin-type O-glycan No 142,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+93,MGlcn143_medium,mucin-type O-glycan No 143,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+94,MGlcn143_rl_medium,released mucin-type O-glycan No 143,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+95,MGlcn144_medium,mucin-type O-glycan No 144,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+96,MGlcn144_rl_medium,released mucin-type O-glycan No 144,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+97,MGlcn145_medium,mucin-type O-glycan No 145,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+98,MGlcn145_rl_medium,released mucin-type O-glycan No 145,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+99,MGlcn146_medium,mucin-type O-glycan No 146,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+100,MGlcn146_rl_medium,released mucin-type O-glycan No 146,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+101,MGlcn147_medium,mucin-type O-glycan No 147,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+102,MGlcn147_rl_medium,released mucin-type O-glycan No 147,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+103,MGlcn148_medium,mucin-type O-glycan No 148,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+104,MGlcn148_rl_medium,released mucin-type O-glycan No 148,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+105,MGlcn149_medium,mucin-type O-glycan No 149,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+106,MGlcn149_rl_medium,released mucin-type O-glycan No 149,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+107,MGlcn14_medium,mucin-type O-glycan No 14,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+108,MGlcn14_rl_medium,released mucin-type O-glycan No 14,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+109,MGlcn150_medium,mucin-type O-glycan No 150,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+110,MGlcn150_rl_medium,released mucin-type O-glycan No 150,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+111,MGlcn151_medium,mucin-type O-glycan No 151,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+112,MGlcn151_rl_medium,released mucin-type O-glycan No 151,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+113,MGlcn152_medium,mucin-type O-glycan No 152,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+114,MGlcn152_rl_medium,released mucin-type O-glycan No 152,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+115,MGlcn153_medium,mucin-type O-glycan No 153,False,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",[]
+116,MGlcn153_rl_medium,released mucin-type O-glycan No 153,False,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",[]
+117,MGlcn154_medium,mucin-type O-glycan No 154,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+118,MGlcn154_rl_medium,released mucin-type O-glycan No 154,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+119,MGlcn155_medium,mucin-type O-glycan No 155,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+120,MGlcn155_rl_medium,released mucin-type O-glycan No 155,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+121,MGlcn156_medium,mucin-type O-glycan No 156,False,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",[]
+122,MGlcn156_rl_medium,released mucin-type O-glycan No 156,False,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",[]
+123,MGlcn157_medium,mucin-type O-glycan No 157,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+124,MGlcn157_rl_medium,released mucin-type O-glycan No 157,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+125,MGlcn158_medium,mucin-type O-glycan No 158,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+126,MGlcn158_rl_medium,released mucin-type O-glycan No 158,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+127,MGlcn159_medium,mucin-type O-glycan No 159,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+128,MGlcn159_rl_medium,released mucin-type O-glycan No 159,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+129,MGlcn15_medium,mucin-type O-glycan No 15,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+130,MGlcn15_rl_medium,released mucin-type O-glycan No 15,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+131,MGlcn160_medium,mucin-type O-glycan No 160,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+132,MGlcn160_rl_medium,released mucin-type O-glycan No 160,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+133,MGlcn161_medium,mucin-type O-glycan No 161,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+134,MGlcn161_rl_medium,released mucin-type O-glycan No 161,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+135,MGlcn162_medium,mucin-type O-glycan No 162,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+136,MGlcn162_rl_medium,released mucin-type O-glycan No 162,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+137,MGlcn163_medium,mucin-type O-glycan No 163,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+138,MGlcn163_rl_medium,released mucin-type O-glycan No 163,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+139,MGlcn164_medium,mucin-type O-glycan No 164,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+140,MGlcn164_rl_medium,released mucin-type O-glycan No 164,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+141,MGlcn165_medium,mucin-type O-glycan No 165,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+142,MGlcn165_rl_medium,released mucin-type O-glycan No 165,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+143,MGlcn166_medium,mucin-type O-glycan No 166,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+144,MGlcn166_rl_medium,released mucin-type O-glycan No 166,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+145,MGlcn167_medium,mucin-type O-glycan No 167,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+146,MGlcn167_rl_medium,released mucin-type O-glycan No 167,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+147,MGlcn168_medium,mucin-type O-glycan No 168,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+148,MGlcn168_rl_medium,released mucin-type O-glycan No 168,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+149,MGlcn169_medium,mucin-type O-glycan No 169,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+150,MGlcn169_rl_medium,released mucin-type O-glycan No 169,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+151,MGlcn16_medium,mucin-type O-glycan No 16,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+152,MGlcn16_rl_medium,released mucin-type O-glycan No 16,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+153,MGlcn170_medium,mucin-type O-glycan No 170,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+154,MGlcn170_rl_medium,released mucin-type O-glycan No 170,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+155,MGlcn171_medium,mucin-type O-glycan No 171,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+156,MGlcn171_rl_medium,released mucin-type O-glycan No 171,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+157,MGlcn172_medium,mucin-type O-glycan No 172,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+158,MGlcn172_rl_medium,released mucin-type O-glycan No 172,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+159,MGlcn173_medium,mucin-type O-glycan No 173,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+160,MGlcn173_rl_medium,released mucin-type O-glycan No 173,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+161,MGlcn174_medium,mucin-type O-glycan No 174,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+162,MGlcn174_rl_medium,released mucin-type O-glycan No 174,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+163,MGlcn175_medium,mucin-type O-glycan No 175,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+164,MGlcn175_rl_medium,released mucin-type O-glycan No 175,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+165,MGlcn176_medium,mucin-type O-glycan No 176,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+166,MGlcn176_rl_medium,released mucin-type O-glycan No 176,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+167,MGlcn177_medium,mucin-type O-glycan No 177,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+168,MGlcn177_rl_medium,released mucin-type O-glycan No 177,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+169,MGlcn178_medium,mucin-type O-glycan No 178,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+170,MGlcn178_rl_medium,released mucin-type O-glycan No 178,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+171,MGlcn179_medium,mucin-type O-glycan No 179,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+172,MGlcn179_rl_medium,released mucin-type O-glycan No 179,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+173,MGlcn17_medium,mucin-type O-glycan No 17,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+174,MGlcn17_rl_medium,released mucin-type O-glycan No 17,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+175,MGlcn180_medium,mucin-type O-glycan No 180,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+176,MGlcn180_rl_medium,released mucin-type O-glycan No 180,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+177,MGlcn181_medium,mucin-type O-glycan No 181,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+178,MGlcn181_rl_medium,released mucin-type O-glycan No 181,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+179,MGlcn182_medium,mucin-type O-glycan No 182,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+180,MGlcn182_rl_medium,released mucin-type O-glycan No 182,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+181,MGlcn183_medium,mucin-type O-glycan No 183,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+182,MGlcn183_rl_medium,released mucin-type O-glycan No 183,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+183,MGlcn185_medium,mucin-type O-glycan No 185,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+184,MGlcn185_rl_medium,released mucin-type O-glycan No 185,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+185,MGlcn186_medium,mucin-type O-glycan No 186,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+186,MGlcn186_rl_medium,released mucin-type O-glycan No 186,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+187,MGlcn187_medium,mucin-type O-glycan No 187,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+188,MGlcn187_rl_medium,released mucin-type O-glycan No 187,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+189,MGlcn188_medium,mucin-type O-glycan No 188,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+190,MGlcn188_rl_medium,released mucin-type O-glycan No 188,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+191,MGlcn189_medium,mucin-type O-glycan No 189,False,['Bacteroides_uniformis_ATCC_8492'],[]
+192,MGlcn189_rl_medium,released mucin-type O-glycan No 189,False,['Bacteroides_uniformis_ATCC_8492'],[]
+193,MGlcn18_medium,mucin-type O-glycan No 18,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+194,MGlcn18_rl_medium,released mucin-type O-glycan No 18,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+195,MGlcn190_medium,mucin-type O-glycan No 190,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+196,MGlcn190_rl_medium,released mucin-type O-glycan No 190,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+197,MGlcn191_medium,mucin-type O-glycan No 191,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+198,MGlcn191_rl_medium,released mucin-type O-glycan No 191,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+199,MGlcn192_medium,mucin-type O-glycan No 192,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+200,MGlcn192_rl_medium,released mucin-type O-glycan No 192,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+201,MGlcn193_medium,mucin-type O-glycan No 193,False,['Bacteroides_uniformis_ATCC_8492'],[]
+202,MGlcn193_rl_medium,released mucin-type O-glycan No 193,False,['Bacteroides_uniformis_ATCC_8492'],[]
+203,MGlcn194_medium,mucin-type O-glycan No 194,False,['Bacteroides_uniformis_ATCC_8492'],[]
+204,MGlcn194_rl_medium,released mucin-type O-glycan No 194,False,['Bacteroides_uniformis_ATCC_8492'],[]
+205,MGlcn195_medium,mucin-type O-glycan No 195,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+206,MGlcn195_rl_medium,released mucin-type O-glycan No 195,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+207,MGlcn196_medium,mucin-type O-glycan No 196,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+208,MGlcn196_rl_medium,released mucin-type O-glycan No 196,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+209,MGlcn19_medium,mucin-type O-glycan No 19,False,['Bacteroides_uniformis_ATCC_8492'],[]
+210,MGlcn19_rl_medium,released mucin-type O-glycan No 19,False,['Bacteroides_uniformis_ATCC_8492'],[]
+211,MGlcn20_medium,mucin-type O-glycan No 20,False,['Bacteroides_uniformis_ATCC_8492'],[]
+212,MGlcn20_rl_medium,released mucin-type O-glycan No 20,False,['Bacteroides_uniformis_ATCC_8492'],[]
+213,MGlcn21_medium,mucin-type O-glycan No 21,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+214,MGlcn21_rl_medium,released mucin-type O-glycan No 21,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+215,MGlcn22_medium,mucin-type O-glycan No 22,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+216,MGlcn22_rl_medium,released mucin-type O-glycan No 22,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+217,MGlcn23_medium,mucin-type O-glycan No 23,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+218,MGlcn23_rl_medium,released mucin-type O-glycan No 23,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+219,MGlcn24_medium,mucin-type O-glycan No 24,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+220,MGlcn24_rl_medium,released mucin-type O-glycan No 24,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+221,MGlcn25_medium,mucin-type O-glycan No 25,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+222,MGlcn25_rl_medium,released mucin-type O-glycan No 25,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+223,MGlcn26_medium,mucin-type O-glycan No 26,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+224,MGlcn26_rl_medium,released mucin-type O-glycan No 26,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+225,MGlcn27_medium,mucin-type O-glycan No 27,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+226,MGlcn27_rl_medium,released mucin-type O-glycan No 27,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+227,MGlcn28_medium,mucin-type O-glycan No 28,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+228,MGlcn28_rl_medium,released mucin-type O-glycan No 28,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+229,MGlcn29_medium,mucin-type O-glycan No 29,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+230,MGlcn29_rl_medium,released mucin-type O-glycan No 29,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+231,MGlcn2_medium,mucin-type O-glycan No 2,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+232,MGlcn2_rl_medium,released mucin-type O-glycan No 2,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+233,MGlcn30_medium,mucin-type O-glycan No 30,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+234,MGlcn30_rl_medium,released mucin-type O-glycan No 30,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+235,MGlcn31_medium,mucin-type O-glycan No 31,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+236,MGlcn31_rl_medium,released mucin-type O-glycan No 31,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+237,MGlcn32_medium,mucin-type O-glycan No 32,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+238,MGlcn32_rl_medium,released mucin-type O-glycan No 32,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+239,MGlcn33_medium,mucin-type O-glycan No 33,False,[],['Bacteroides_uniformis_ATCC_8492']
+240,MGlcn33_rl_medium,released mucin-type O-glycan No 33,False,[],['Bacteroides_uniformis_ATCC_8492']
+241,MGlcn34_medium,mucin-type O-glycan No 34,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+242,MGlcn34_rl_medium,released mucin-type O-glycan No 34,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+243,MGlcn35_medium,mucin-type O-glycan No 35,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+244,MGlcn35_rl_medium,released mucin-type O-glycan No 35,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+245,MGlcn36_medium,mucin-type O-glycan No 36,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+246,MGlcn36_rl_medium,released mucin-type O-glycan No 36,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+247,MGlcn37_medium,mucin-type O-glycan No 37,False,[],['Bacteroides_uniformis_ATCC_8492']
+248,MGlcn37_rl_medium,released mucin-type O-glycan No 37,False,[],['Bacteroides_uniformis_ATCC_8492']
+249,MGlcn38_medium,mucin-type O-glycan No 38,False,[],['Bacteroides_uniformis_ATCC_8492']
+250,MGlcn38_rl_medium,released mucin-type O-glycan No 38,False,[],['Bacteroides_uniformis_ATCC_8492']
+251,MGlcn39_medium,mucin-type O-glycan No 39,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+252,MGlcn39_rl_medium,released mucin-type O-glycan No 39,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+253,MGlcn3_medium,mucin-type O-glycan No 3,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+254,MGlcn3_rl_medium,released mucin-type O-glycan No 3,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+255,MGlcn40_medium,mucin-type O-glycan No 40,False,[],['Bacteroides_uniformis_ATCC_8492']
+256,MGlcn40_rl_medium,released mucin-type O-glycan No 40,False,[],['Bacteroides_uniformis_ATCC_8492']
+257,MGlcn41_medium,mucin-type O-glycan No 41,False,[],['Bacteroides_uniformis_ATCC_8492']
+258,MGlcn41_rl_medium,released mucin-type O-glycan No 41,False,[],['Bacteroides_uniformis_ATCC_8492']
+259,MGlcn42_medium,mucin-type O-glycan No 42,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+260,MGlcn42_rl_medium,released mucin-type O-glycan No 42,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+261,MGlcn45_medium,mucin-type O-glycan No 45,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+262,MGlcn45_rl_medium,released mucin-type O-glycan No 45,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+263,MGlcn46_medium,mucin-type O-glycan No 46,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+264,MGlcn46_rl_medium,released mucin-type O-glycan No 46,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+265,MGlcn47_medium,mucin-type O-glycan No 47,False,[],['Bacteroides_uniformis_ATCC_8492']
+266,MGlcn47_rl_medium,released mucin-type O-glycan No 47,False,[],['Bacteroides_uniformis_ATCC_8492']
+267,MGlcn48_medium,mucin-type O-glycan No 48,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+268,MGlcn48_rl_medium,released mucin-type O-glycan No 48,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+269,MGlcn4_medium,mucin-type O-glycan No 4,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+270,MGlcn4_rl_medium,released mucin-type O-glycan No 4,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+271,MGlcn50_medium,mucin-type O-glycan No 50,False,[],['Bacteroides_uniformis_ATCC_8492']
+272,MGlcn50_rl_medium,released mucin-type O-glycan No 50,False,[],['Bacteroides_uniformis_ATCC_8492']
+273,MGlcn51_medium,mucin-type O-glycan No 51,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+274,MGlcn51_rl_medium,released mucin-type O-glycan No 51,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+275,MGlcn53_medium,mucin-type O-glycan No 53,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+276,MGlcn53_rl_medium,released mucin-type O-glycan No 53,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+277,MGlcn54_medium,mucin-type O-glycan No 54,False,[],['Bacteroides_uniformis_ATCC_8492']
+278,MGlcn54_rl_medium,released mucin-type O-glycan No 54,False,[],['Bacteroides_uniformis_ATCC_8492']
+279,MGlcn55_medium,mucin-type O-glycan No 55,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+280,MGlcn55_rl_medium,released mucin-type O-glycan No 55,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+281,MGlcn56_medium,mucin-type O-glycan No 56,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+282,MGlcn56_rl_medium,released mucin-type O-glycan No 56,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+283,MGlcn57_medium,mucin-type O-glycan No 57,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+284,MGlcn57_rl_medium,released mucin-type O-glycan No 57,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+285,MGlcn58_medium,mucin-type O-glycan No 58,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+286,MGlcn58_rl_medium,released mucin-type O-glycan No 58,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+287,MGlcn59_medium,mucin-type O-glycan No 59,False,[],['Bacteroides_uniformis_ATCC_8492']
+288,MGlcn59_rl_medium,released mucin-type O-glycan No 59,False,[],['Bacteroides_uniformis_ATCC_8492']
+289,MGlcn5_medium,mucin-type O-glycan No 5,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+290,MGlcn5_rl_medium,released mucin-type O-glycan No 5,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+291,MGlcn60_medium,mucin-type O-glycan No 60,False,[],['Bacteroides_uniformis_ATCC_8492']
+292,MGlcn60_rl_medium,released mucin-type O-glycan No 60,False,[],['Bacteroides_uniformis_ATCC_8492']
+293,MGlcn61_medium,mucin-type O-glycan No 61,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+294,MGlcn61_rl_medium,released mucin-type O-glycan No 61,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+295,MGlcn62_medium,mucin-type O-glycan No 62,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+296,MGlcn62_rl_medium,released mucin-type O-glycan No 62,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+297,MGlcn63_medium,mucin-type O-glycan No 63,False,[],['Bacteroides_uniformis_ATCC_8492']
+298,MGlcn63_rl_medium,released mucin-type O-glycan No 63,False,[],['Bacteroides_uniformis_ATCC_8492']
+299,MGlcn64_medium,mucin-type O-glycan No 64,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+300,MGlcn64_rl_medium,released mucin-type O-glycan No 64,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+301,MGlcn65_medium,mucin-type O-glycan No 65,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+302,MGlcn65_rl_medium,released mucin-type O-glycan No 65,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+303,MGlcn66_medium,mucin-type O-glycan No 66,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+304,MGlcn66_rl_medium,released mucin-type O-glycan No 66,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+305,MGlcn67_medium,mucin-type O-glycan No 67,False,[],['Bacteroides_uniformis_ATCC_8492']
+306,MGlcn67_rl_medium,released mucin-type O-glycan No 67,False,[],['Bacteroides_uniformis_ATCC_8492']
+307,MGlcn68_medium,mucin-type O-glycan No 68,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+308,MGlcn68_rl_medium,released mucin-type O-glycan No 68,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+309,MGlcn69_medium,mucin-type O-glycan No 69,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+310,MGlcn69_rl_medium,released mucin-type O-glycan No 69,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+311,MGlcn6_medium,mucin-type O-glycan No 6,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+312,MGlcn6_rl_medium,released mucin-type O-glycan No 6,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+313,MGlcn70_medium,mucin-type O-glycan No 70,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+314,MGlcn70_rl_medium,released mucin-type O-glycan No 70,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+315,MGlcn71_medium,mucin-type O-glycan No 71,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+316,MGlcn71_rl_medium,released mucin-type O-glycan No 71,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+317,MGlcn72_medium,mucin-type O-glycan No 72,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+318,MGlcn72_rl_medium,released mucin-type O-glycan No 72,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+319,MGlcn73_medium,mucin-type O-glycan No 73,False,['Bacteroides_uniformis_ATCC_8492'],[]
+320,MGlcn73_rl_medium,released mucin-type O-glycan No 73,False,['Bacteroides_uniformis_ATCC_8492'],[]
+321,MGlcn74_medium,mucin-type O-glycan No 74,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+322,MGlcn74_rl_medium,released mucin-type O-glycan No 74,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+323,MGlcn75_medium,mucin-type O-glycan No 75,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+324,MGlcn75_rl_medium,released mucin-type O-glycan No 75,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+325,MGlcn76_medium,mucin-type O-glycan No 76,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+326,MGlcn76_rl_medium,released mucin-type O-glycan No 76,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+327,MGlcn77_medium,mucin-type O-glycan No 77,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+328,MGlcn77_rl_medium,released mucin-type O-glycan No 77,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+329,MGlcn78_medium,mucin-type O-glycan No 78,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+330,MGlcn78_rl_medium,released mucin-type O-glycan No 78,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+331,MGlcn79_medium,mucin-type O-glycan No 79,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+332,MGlcn79_rl_medium,released mucin-type O-glycan No 79,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+333,MGlcn7_medium,mucin-type O-glycan No 7,False,[],['Bacteroides_uniformis_ATCC_8492']
+334,MGlcn7_rl_medium,released mucin-type O-glycan No 7,False,[],['Bacteroides_uniformis_ATCC_8492']
+335,MGlcn80_medium,mucin-type O-glycan No 80,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+336,MGlcn80_rl_medium,released mucin-type O-glycan No 80,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+337,MGlcn81_medium,mucin-type O-glycan No 81,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+338,MGlcn81_rl_medium,released mucin-type O-glycan No 81,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+339,MGlcn82_medium,mucin-type O-glycan No 82,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+340,MGlcn82_rl_medium,released mucin-type O-glycan No 82,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+341,MGlcn83_medium,mucin-type O-glycan No 83,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+342,MGlcn83_rl_medium,released mucin-type O-glycan No 83,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+343,MGlcn84_medium,mucin-type O-glycan No 84,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+344,MGlcn84_rl_medium,released mucin-type O-glycan No 84,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+345,MGlcn85_medium,mucin-type O-glycan No 85,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+346,MGlcn85_rl_medium,released mucin-type O-glycan No 85,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+347,MGlcn86_medium,mucin-type O-glycan No 86,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+348,MGlcn86_rl_medium,released mucin-type O-glycan No 86,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+349,MGlcn87_medium,mucin-type O-glycan No 87,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+350,MGlcn87_rl_medium,released mucin-type O-glycan No 87,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+351,MGlcn88_medium,mucin-type O-glycan No 88,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+352,MGlcn88_rl_medium,released mucin-type O-glycan No 88,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+353,MGlcn89_medium,mucin-type O-glycan No 89,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+354,MGlcn89_rl_medium,released mucin-type O-glycan No 89,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+355,MGlcn8_medium,mucin-type O-glycan No 8,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+356,MGlcn8_rl_medium,released mucin-type O-glycan No 8,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+357,MGlcn90_medium,mucin-type O-glycan No 90,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+358,MGlcn90_rl_medium,released mucin-type O-glycan No 90,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+359,MGlcn91_medium,mucin-type O-glycan No 91,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+360,MGlcn91_rl_medium,released mucin-type O-glycan No 91,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+361,MGlcn92_medium,mucin-type O-glycan No 92,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+362,MGlcn92_rl_medium,released mucin-type O-glycan No 92,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+363,MGlcn93_medium,mucin-type O-glycan No 93,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+364,MGlcn93_rl_medium,released mucin-type O-glycan No 93,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+365,MGlcn94_medium,mucin-type O-glycan No 94,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+366,MGlcn94_rl_medium,released mucin-type O-glycan No 94,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+367,MGlcn95_medium,mucin-type O-glycan No 95,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+368,MGlcn95_rl_medium,released mucin-type O-glycan No 95,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+369,MGlcn96_medium,mucin-type O-glycan No 96,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+370,MGlcn96_rl_medium,released mucin-type O-glycan No 96,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+371,MGlcn97_medium,mucin-type O-glycan No 97,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+372,MGlcn97_rl_medium,released mucin-type O-glycan No 97,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+373,MGlcn98_medium,mucin-type O-glycan No 98,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+374,MGlcn98_rl_medium,released mucin-type O-glycan No 98,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+375,MGlcn99_medium,mucin-type O-glycan No 99,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+376,MGlcn99_rl_medium,released mucin-type O-glycan No 99,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+377,MGlcn9_medium,mucin-type O-glycan No 9,False,[],['Bacteroides_uniformis_ATCC_8492']
+378,MGlcn9_rl_medium,released mucin-type O-glycan No 9,False,[],['Bacteroides_uniformis_ATCC_8492']
+379,T_antigen_medium,T antigen (core 1),True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+380,Tn_antigen_medium,Tn antigen,False,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",[]
+381,Tyr_ggn_medium,Tyr-194 of apo-glycogenin protein (primer for glycogen synthesis),False,['Bacteroides_uniformis_ATCC_8492'],[]
+382,ac_medium,acetate,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+383,acgal_medium,N-acetyl-D-galactosamine,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+384,acgam_medium,N-acetyl-D-glucosamine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+385,acnam2a6agal_medium,"Alpha-2,6-N-acetylneuraminate-N-acetylgalactosamine",True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+386,acnam_medium,N-acetylneuraminate,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+387,adn_medium,Adenosine,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+388,adocbl_medium,Adenosylcobalamin,False,[],[]
+389,agal1b3agal_medium,"Beta-1,3-N,N-diacetylgalactosamine",False,[],['Bacteroides_uniformis_ATCC_8492']
+390,agam1b3agal_medium,"Beta-1,3-N-acetylglucosamine-N-acetylgalactosamine",True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+391,agam1b6agal_medium,"Beta-1,6-N-acetylglucosamine-N-acetylgalactosamine",True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+392,ala_L_medium,L-alanine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+393,amylopect900_medium,"Amylopectin, 900 repeat units",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+394,arab_L_medium,L-arabinose,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+395,arabinogal_medium,"Larch arabinogalactan, gal/ara 6:1, small amount of glcur, MW ~ 116000",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+396,arabttr_medium,Arabinotriose,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+397,arg_L_medium,L-argininium(1+),False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+398,asn_L_medium,L-asparagine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+399,btn_medium,Biotin,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+400,ca2_medium,calcium(2+),False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+401,cbl1_medium,Cob(I)alamin,False,[],[]
+402,cbl2_medium,Cob(II)alamin,False,[],[]
+403,cd2_medium,Cadmium,False,[],[]
+404,cellb_medium,cellobiose,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+405,cgly_medium,L-cysteinylglycine,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+406,cholate_medium,Cholate,False,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",[]
+407,chtbs_medium,"N,N-diacetylchitobiose",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+408,cit_medium,Citrate,False,[],['Bacteroides_uniformis_ATCC_8492']
+409,cl_medium,Chloride,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+410,co2_medium,carbon dioxide,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+411,cobalt2_medium,Co2+,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+412,core2_medium,Core 2,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+413,core2_rl_medium,released Core 2,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+414,core3_medium,Core 3,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+415,core4_medium,Core 4,False,[],['Bacteroides_uniformis_ATCC_8492']
+416,core4_rl_medium,released Core 4,False,[],['Bacteroides_uniformis_ATCC_8492']
+417,core5_medium,Core 5,False,[],['Bacteroides_uniformis_ATCC_8492']
+418,core6_medium,Core 6,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+419,core8_medium,Core 8,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+420,cro4_medium,chromate,False,[],[]
+421,cu2_medium,Cu2+,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+422,cys_L_medium,L-cysteine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+423,cytd_medium,Cytidine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",['Bacteroides_uniformis_ATCC_8492']
+424,dad_2_medium,2-deoxyadenosine,False,['Bacteroides_uniformis_ATCC_8492'],[]
+425,dcyt_medium,Deoxycytidine,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+426,ddca_medium,laurate,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+427,dextran40_medium,"Dextran 40, 1,6-alpha-D-Glucan",False,[],['Bacteroides_uniformis_ATCC_8492']
+428,dgchol_medium,glycochenodeoxycholate,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+429,dgsn_medium,Deoxyguanosine,False,[],['Bacteroides_uniformis_ATCC_8492']
+430,din_medium,Deoxyinosine,False,[],['Bacteroides_uniformis_ATCC_8492']
+431,dsT_antigen_medium,disialyl-T antigen,False,[],['Bacteroides_uniformis_ATCC_8492']
+432,dsT_antigen_rl_medium,released disialyl-T antigen,False,[],['Bacteroides_uniformis_ATCC_8492']
+433,duri_medium,Deoxyuridine,False,[],['Bacteroides_uniformis_ATCC_8492']
+434,f1a_medium,F1alpha,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+435,f1a_rl_medium,released F1alpha antigen,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+436,fe2_medium,Fe2+,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+437,fe3_medium,Fe3+,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+438,for_medium,Formate,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+439,fru_medium,D-Fructose,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+440,fuc_L_medium,L-fucose,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+441,gal1a3acgal_medium,"Alpha-1,3-Galactose-N-acetylgalactosamine",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+442,gal1b3acgal_medium,"Beta-1,3-Galactose-N-acetylgalactosamine",True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+443,gal_medium,D-Galactose,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+444,galmannan_medium,"Carob galactomannan, Gal:Man ratio 22/78. 220 gal, 780 man assumed",False,[],['Bacteroides_uniformis_ATCC_8492']
+445,galt_medium,galactitol,False,[],[]
+446,galur_medium,D-Galacturonate,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+447,gam_medium,D-Glucosamine,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+448,gcald_medium,glycolaldehyde,True,['Bifidobacterium_adolescentis_ATCC_15703'],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+449,gchola_medium,glycocholate,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+450,glc_D_medium,D-glucose,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+451,glcmannan_medium,"Konjac glucomannan, MW 77,500 (PMID:17962981), Man:Glc ~ 2:1. -> 286 man, 143 glc_D",False,[],['Bacteroides_uniformis_ATCC_8492']
+452,glcur_medium,D-glucuronate,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",['Bacteroides_uniformis_ATCC_8492']
+453,gly_medium,Glycine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+454,glygn2_medium,"glycogen, structure 2 (glycogenin-1,6-{7[1,4-Glc], 4[1,4-Glc]})",False,[],['Bacteroides_uniformis_ATCC_8492']
+455,glygn4_medium,"glycogen, structure 4 (glycogenin-1,6-{2[1,4-Glc], [1,4-Glc]})",False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+456,glygn5_medium,"glycogen, structure 5 (glycogenin-2[1,4-Glc])",False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+457,gncore1_medium,"GlcNAc-alpha-1,4-Core 1",False,['Bacteroides_uniformis_ATCC_8492'],[]
+458,gncore1_rl_medium,"released GlcNAc-alpha-1,4-Core 1",False,['Bacteroides_uniformis_ATCC_8492'],[]
+459,gncore2_medium,"GlcNAc-alpha-1,4-Core 2",False,[],['Bacteroides_uniformis_ATCC_8492']
+460,gncore2_rl_medium,"released GlcNAc-alpha-1,4-Core 2",False,[],['Bacteroides_uniformis_ATCC_8492']
+461,gsn_medium,Guanosine,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+462,h2_medium,Hydrogen,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+463,h2o_medium,Water,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+464,h2s_medium,Hydrogen sulfide,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+465,h_medium,proton,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+466,hdca_medium,Hexadecanoate (n-C16:0),False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+467,hg2_medium,Hg2+,False,[],[]
+468,indole_medium,Indole,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+469,ins_medium,Inosine,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+470,inulin_medium,"Chicory inulin, 30 monosaccharide units (29 fru, 1 glc) on average",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+471,isobut_medium,"Isobutyrate, 2-Methylpropanoate",False,['Bacteroides_uniformis_ATCC_8492'],[]
+472,isocapr_medium,Isocaproate,False,['Bacteroides_uniformis_ATCC_8492'],[]
+473,isoval_medium,"Isovalerate, 3-Methylbutanoate",False,['Bacteroides_uniformis_ATCC_8492'],[]
+474,k_medium,potassium,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+475,kesto_medium,"Kestose (2 fru, 1 glc inulin-type fructo-oligosaccharide)",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+476,kestopt_medium,"Kestopentaose (4 fru, 1 glc inulin-type fructo-oligosaccharide)",True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+477,kestottr_medium,"Kestotetraose (3 fru, 1 glc inulin-type fructo-oligosaccharide)",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+478,lac_D_medium,(R)-lactate,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+479,lac_L_medium,(S)-lactate,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",['Bifidobacterium_adolescentis_ATCC_15703']
+480,lald_L_medium,(S)-lactaldehyde,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+481,lcts_medium,Lactose,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+482,leu_L_medium,L-leucine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+483,lichn_medium,"Lichenin from Icelandic moss, 170 glucose residues. DOI: 10.1039/JR9570001951",False,[],['Bacteroides_uniformis_ATCC_8492']
+484,lmn2_medium,Laminaribiose,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+485,lmn30_medium,"laminarin (n=30 repeat units, beta -1,3 glc)",False,[],['Bacteroides_uniformis_ATCC_8492']
+486,lys_L_medium,L-lysinium(1+),True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+487,malt_medium,Maltose,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+488,malttr_medium,maltotriose,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+489,man_medium,D-Mannose,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']"
+490,mantr_medium,"mannotriose (beta-1,4)",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+491,melib_medium,Melibiose,True,['Faecalibacterium_prausnitzii_M21_2'],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+492,meoh_medium,methanol,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+493,met_L_medium,L-methionine,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+494,metala_medium,L-methionyl-L-alanine,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+495,mg2_medium,magnesium,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+496,mn2_medium,Mn2+,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+497,na1_medium,Sodium,False,[],[]
+498,nac_medium,Nicotinate,True,['Bacteroides_uniformis_ATCC_8492'],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+499,nh4_medium,Ammonium,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+500,no2_medium,Nitrite,False,[],['Bacteroides_uniformis_ATCC_8492']
+501,o2_medium,O2,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+502,ocdca_medium,octadecanoate (n-C18:0),False,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",[]
+503,pac_medium,phenylacetate,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+504,pb_medium,Lead,False,[],[]
+505,pecticgal_medium,"Pectic galactan (potato), gal: arab-L: rmn: galur = 78: 9: 4: 9 (www.megazyme.com). Assumed to consist of 100 sugars per macromo... <Preview truncated at 128 characters>",False,[],['Bacteroides_uniformis_ATCC_8492']
+506,phe_L_medium,L-phenylalanine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+507,pheme_medium,Protoheme,False,[],['Bacteroides_uniformis_ATCC_8492']
+508,pi_medium,hydrogenphosphate,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+509,ppa_medium,propionate,False,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",[]
+510,ppi_medium,Diphosphate,False,['Bacteroides_uniformis_ATCC_8492'],[]
+511,ptrc_medium,Putrescine,False,[],['Faecalibacterium_prausnitzii_M21_2']
+512,pullulan1200_medium,"pullulan (n=1200 repeat units, alpha-1,4 and alph-1,6 bounds)",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+513,pydam_medium,Pyridoxamine,False,[],['Bacteroides_uniformis_ATCC_8492']
+514,pydx_medium,Pyridoxal,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+515,pydxn_medium,Pyridoxine,False,[],['Bacteroides_uniformis_ATCC_8492']
+516,raffin_medium,Raffinose,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+517,rib_D_medium,D-ribose,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+518,rmn_medium,L-Rhamnose,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+519,sT_antigen_medium,sialyl-T antigen,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+520,sT_antigen_rl_medium,released sialyl-Tn antigen,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+521,sTn_antigen_medium,sialyl-Tn antigen,True,"['Bacteroides_uniformis_ATCC_8492', 'Faecalibacterium_prausnitzii_M21_2']",['Bacteroides_uniformis_ATCC_8492']
+522,ser_L_medium,L-serine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+523,so4_medium,sulfate,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+524,spmd_medium,Spermidine,False,[],['Faecalibacterium_prausnitzii_M21_2']
+525,stys_medium,Stachyose,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+526,succ_medium,Succinate,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+527,sucr_medium,Sucrose,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+528,taur_medium,Taurine,False,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",[]
+529,tchola_medium,taurocholate,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+530,tdchola_medium,taurochenodeoxycholate,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+531,thr_L_medium,L-threonine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+532,thymd_medium,Thymidine,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+533,tre_medium,Trehalose,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+534,trp_L_medium,L-tryptophan,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+535,ttdca_medium,tetradecanoate (n-C14:0),True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']",['Bacteroides_uniformis_ATCC_8492']
+536,urea_medium,Urea,False,['Bacteroides_uniformis_ATCC_8492'],[]
+537,uri_medium,Uridine,False,['Bacteroides_uniformis_ATCC_8492'],['Bacteroides_uniformis_ATCC_8492']
+538,val_L_medium,L-valine,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+539,xyl_D_medium,aldehydo-D-xylose,True,"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']","['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+540,xylan_medium,"Oat spelt xylan, MW 79200 (DOI: 10.1002/masy.200551405) = 528 xyl_D",False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703']"
+541,xyluglc_medium,"Xyluglucan, PMID:16663672, Fry SC 1989. 600 glc_D, 360 xyl_D, 108 gal, 60 fuc_L, 6 arab_L",False,[],['Bacteroides_uniformis_ATCC_8492']
+542,zn2_medium,Zinc,False,[],"['Bacteroides_uniformis_ATCC_8492', 'Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+543,_12ppd_S_medium,"(S)-propane-1,2-diol",False,['Bifidobacterium_adolescentis_ATCC_15703'],[]
+544,_4abz_medium,4-Aminobenzoate,False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+545,_5mthf_medium,5-Methyltetrahydrofolate,False,['Bifidobacterium_adolescentis_ATCC_15703'],[]
+546,acald_medium,acetaldehyde,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+547,alaasp_medium,L-alanyl-L-aspartate,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+548,alagln_medium,L-alanyl-L-glutamine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+549,alaglu_medium,L-alanyl-L-glutamate,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+550,alagly_medium,L-alanylglycine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+551,alahis_medium,L-alanyl-L-histidine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+552,alaleu_medium,L-alanyl-L-leucine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+553,alathr_medium,L-alanyl-L-threonine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+554,amylose300_medium,"amylose (n=300 repeat units, alpha-1,4-glc)",False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+555,arabinoxyl_medium,"Arabinoxylan, 30 xyl_D, 18 arab_L, 3 gal, 3 glc_D",False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+556,arbt_medium,Arbutin,False,[],[]
+557,asp_L_medium,L-aspartate(1-),True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+558,but_medium,butyrate,True,['Faecalibacterium_prausnitzii_M21_2'],['Bifidobacterium_adolescentis_ATCC_15703']
+559,dextrin_medium,Dextrin,False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+560,etoh_medium,ethanol,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+561,fol_medium,Folate,True,['Bifidobacterium_adolescentis_ATCC_15703'],['Faecalibacterium_prausnitzii_M21_2']
+562,gln_L_medium,L-glutamine,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+563,glu_L_medium,L-glutamate(1-),True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+564,glyasn_medium,Glycyl-L-asparagine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+565,glyasp_medium,Glycyl-L-aspartate,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+566,glyc_medium,Glycerol,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+567,glycys_medium,Gly-Cys,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+568,glygln_medium,Glycyl-L-glutamine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+569,glyglu_medium,Glycyl-L-glutamate,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+570,glyleu_medium,Glycylleucine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+571,glymet_medium,Glycyl-L-methionine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+572,glyphe_medium,Glycylphenylalanine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+573,glypro_medium,Glycylproline,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+574,glytyr_medium,Glycyl-L-tyrosine,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+575,his_L_medium,L-histidine,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+576,ile_L_medium,L-isoleucine,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+577,malthx_medium,Maltohexaose,False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+578,met_D_medium,D-Methionine,False,[],[]
+579,metsox_R_L_medium,L-methionine-R-sulfoxide,False,[],[]
+580,metsox_S_L_medium,L-Methionine Sulfoxide,False,[],['Faecalibacterium_prausnitzii_M21_2']
+581,mnl_medium,D-Mannitol,False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+582,mqn7_medium,Menaquinone 7,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+583,orn_medium,Ornithine,True,['Faecalibacterium_prausnitzii_M21_2'],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+584,pnto_R_medium,(R)-Pantothenate,False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+585,pro_L_medium,L-proline,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+586,ribflv_medium,Riboflavin,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+587,salcn_medium,Salicin,False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+588,sbt_D_medium,D-glucitol,False,[],[]
+589,sheme_medium,Siroheme,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+590,starch1200_medium,"starch n=1200 repeat units (300 repeat units amylose, 900 repeat units amylopectin, corresponds to potatoe starch)",False,[],['Bifidobacterium_adolescentis_ATCC_15703']
+591,strch1_medium,"starch, structure 1 (1,6-{7[1,4-Glc], 4[1,4-Glc]})",False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+592,strch2_medium,"starch, structure 2 (1,6-{2[1,4-Glc], [1,4-Glc]})",True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+593,thf_medium,"5,6,7,8-Tetrahydrofolate",False,['Bifidobacterium_adolescentis_ATCC_15703'],[]
+594,thm_medium,Thiamin,False,[],"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+595,tsul_medium,thiosulfate(2-),False,[],[]
+596,tyr_L_medium,L-tyrosine,True,"['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']","['Bifidobacterium_adolescentis_ATCC_15703', 'Faecalibacterium_prausnitzii_M21_2']"
+597,xan_medium,Xanthine,False,['Bifidobacterium_adolescentis_ATCC_15703'],['Bifidobacterium_adolescentis_ATCC_15703']
+598,_12dgr180_medium,"1,2-Diacyl-sn-glycerol (dioctadecanoyl, n-C18:0)",False,[],['Faecalibacterium_prausnitzii_M21_2']
+599,_3mop_medium,3-methyl-2-oxopentanoate,False,['Faecalibacterium_prausnitzii_M21_2'],['Faecalibacterium_prausnitzii_M21_2']
+600,Lcyst_medium,L-cysteate(1-),False,[],[]
+601,Lcystin_medium,L-cystine,False,['Faecalibacterium_prausnitzii_M21_2'],['Faecalibacterium_prausnitzii_M21_2']
+602,amp_medium,AMP,False,[],['Faecalibacterium_prausnitzii_M21_2']
+603,butso3_medium,butanesulfonate,False,[],[]
+604,ethso3_medium,ethanesulfonate,False,[],[]
+605,fecrm_medium,Ferrichrome,False,[],[]
+606,fum_medium,Fumarate,False,['Faecalibacterium_prausnitzii_M21_2'],['Faecalibacterium_prausnitzii_M21_2']
+607,glctnb_medium,Galacto-N-biose,False,[],['Faecalibacterium_prausnitzii_M21_2']
+608,gthox_medium,Oxidized glutathione,False,['Faecalibacterium_prausnitzii_M21_2'],['Faecalibacterium_prausnitzii_M21_2']
+609,gthrd_medium,Reduced glutathione,False,['Faecalibacterium_prausnitzii_M21_2'],['Faecalibacterium_prausnitzii_M21_2']
+610,gua_medium,Guanine,False,[],['Faecalibacterium_prausnitzii_M21_2']
+611,hexs_medium,hexanesulfonate,False,[],[]
+612,hxan_medium,Hypoxanthine,False,['Faecalibacterium_prausnitzii_M21_2'],['Faecalibacterium_prausnitzii_M21_2']
+613,isetac_medium,Isethionic acid,False,[],[]
+614,mops_medium,3-(n-Morpholino)Propanesulfonic Acid,False,[],[]
+615,mso3_medium,methanesulfonate,False,[],[]
+616,pect_medium,pectins,False,[],['Faecalibacterium_prausnitzii_M21_2']
+617,q8_medium,Ubiquinone-8,False,[],['Faecalibacterium_prausnitzii_M21_2']
+618,rbflvrd_medium,Reduced riboflavin,False,['Faecalibacterium_prausnitzii_M21_2'],['Faecalibacterium_prausnitzii_M21_2']
+619,sulfac_medium,sulfoacetate,False,[],[]
+620,ura_medium,uracil,False,['Faecalibacterium_prausnitzii_M21_2'],['Faecalibacterium_prausnitzii_M21_2']
+621,cpd11416_medium,Community Biomass,False,[],[]

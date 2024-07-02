@@ -175,6 +175,7 @@ def fixed_abundance(com_model_object, abundance_dict):
         
     # converting to fixed abundance model and then adding the abundances from abundance_dict
     com_model_object.convert_to_fixed_abundance()
+    abundance_dict = com_model_object.generate_equal_abundance_dict()
     com_model_object.apply_fixed_abundance(abundance_dict)
 
     print("\n\nFinished Creating Community Model!!!")
@@ -229,6 +230,7 @@ def metabolite_exchange(com_model_object, output_dir):
     MES = com_model_object.potential_metabolite_exchanges()
     MES_path = output_dir / r"mes_results.csv"
     MES.to_csv(MES_path)
+    del MES
     print("\n OUTPUT: {0}".format(MES_path))
 
 def main():
