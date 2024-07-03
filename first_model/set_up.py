@@ -34,11 +34,9 @@ def get_models(df_path, model_path, FBA_models_path):
     
     count = 0
     for filepath in model_files:
-        # chnage to name and check it works
-        model_name = str(filepath).split("/")[1] # linux
-        # model_name = str(filepath).split("\\")[1] # microsoft
+        model_name = filepath.name
         
-        genus_name = model_name.split("_")[0]
+        genus_name = str(model_name).split("_")[0]
         
         # if model name in the dataframe
         genus_df = df.loc[df['Genus'] == genus_name]
