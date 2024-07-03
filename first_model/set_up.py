@@ -34,7 +34,9 @@ def get_models(df_path, model_path, FBA_models_path):
     
     count = 0
     for filepath in model_files:
-        model_name = str(filepath).split("\\")[1]
+        # chnage to name and check it works
+        model_name = str(filepath).split("/")[1] # linux
+        # model_name = str(filepath).split("\\")[1] # microsoft
         
         genus_name = model_name.split("_")[0]
         
