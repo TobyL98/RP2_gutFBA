@@ -8,23 +8,27 @@ models in another folder'''
 
 from pathlib import Path
 
-def copy_models(correct_path, all_path):
+def copy_models(correct_path, all_path, xml_mat):
     '''Copies SBML models from one folder to
 another. Only copies models that match the
 models in another folder'''
 
     correct_files = correct_path.glob('*.xml')
-    all_files = all_path.glob('*.xml')
 
-    correct_filename_list = []
+    if xml_mat == "mat":
+        all_files = all_path.glob('*.mat')
+    else:
+        all_files = all_path.glob('*.xml')
+
+    correct_filestem_list = []
     for correct_filepath in correct_files:
-        correct_filename = correct_filepath.name
-        correct_filename_list.append(correct_filename)
+        correct_filestem = correct_filepath.stem
+        correct_filestem_list.append(correct_filestem)
     
     for all_filepath in all_files:
-        all_filename = all_filepath.name
+        all_filestem = all_filepath.stem
        
-        if all_filename not in correct_filename_list:
+        if all_filestem not in correct_filestem_list:
            all_filepath.unlink()
 
 
@@ -32,6 +36,7 @@ models in another folder'''
 
 
 correct_models_path = Path('models')
-all_models_path = Path('Agora_western/sbml')
+all_models_path = Path('Agora_Western/mat')
+xml_or_mat = "mat"
 
-copy_models(correct_models_path, all_models_path)
+copy_models(correct_models_path, all_models_path, xml_or_mat)

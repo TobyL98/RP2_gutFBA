@@ -11,7 +11,7 @@ import shutil
 import re
 
 
-def get_models(df_path, model_path, FBA_models_path):
+def get_models(df_path, model_path, FBA_models_path, matlab):
 
     '''Function will get the models that match the
     genus in the inputted Dataframe
@@ -22,19 +22,22 @@ def get_models(df_path, model_path, FBA_models_path):
     print("#############################")
     # deleting any exisiting models in FBA models
     # folder
-    old_model_files = FBA_models_path.glob('*.xml')
+    old_model_files = list(FBA_models_path.glob('*.xml')) + list(FBA_models_path.glob('*.mat'))
     for filepath in old_model_files:
         filepath.unlink()
 
 
     df = pd.read_csv(df_path, sep = ",")
 
-    # SBML files of all metabolic models
-    model_files = model_path.glob('*.xml')
+    # SBML or matlab files of all metabolic models
+    if matlab == True:
+        model_files = model_path.glob('*.mat')
+    else:
+        model_files = model_path.glob('*.xml')
     
-    count = 0
+
     for filepath in model_files:
-        model_name = filepath.name
+        model_name = filepath.stem
         
         genus_name = str(model_name).split("_")[0]
         
@@ -44,7 +47,10 @@ def get_models(df_path, model_path, FBA_models_path):
 
             # will copy model to the destination folder
             # where FBA will be run
-            dest_path = FBA_models_path / "{0}.xml".format(genus_name) 
+            if matlab == True:
+                dest_path = FBA_models_path / "{0}.mat".format(genus_name) 
+            else:
+                dest_path = FBA_models_path / "{0}.xml".format(genus_name) 
             try:
                 shutil.copy(filepath, dest_path)
             except shutil.SameFileError:
@@ -58,10 +64,11 @@ def get_models(df_path, model_path, FBA_models_path):
 def main():
 
     df_path = Path("Outputs/average/healthy_df_out_ave.csv")
-    model_path = Path("models")
+    model_path = Path("Agora_Western/mat")
     models_to_run_path = Path("models_to_run")
+    matlab = True
 
-    get_models(df_path, model_path, models_to_run_path)
+    get_models(df_path, model_path, models_to_run_path, matlab)
 
 
 if __name__ == "__main__":
