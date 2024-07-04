@@ -17,11 +17,12 @@ from set_up import get_models
 
 
 # import PyCoMo
-path_root = Path("C:/Users/tobyl/OneDrive - The University of Manchester/Bioinformatics Masters/Research Project 2/Pycomo/PyCoMo/src")
+# path_root = Path("C:/Users/tobyl/OneDrive - The University of Manchester/Bioinformatics Masters/Research Project 2/Pycomo/PyCoMo/src")
+path_root = Path("/Home/Documents/Toby/PyCoMo/src/pycomo")
 sys.path.append(str(path_root))
 import pycomo
 
-# tests if an input file exists
+# tests if an input file existsython 
 def file_test(arg):
     p = Path(arg)
     if p.is_file():
@@ -99,7 +100,8 @@ def abundance_dict(df_path, FBA_models_path):
     species_we_have = []
     for model in FBA_model_files:
         model_name = str(model)
-        species_name = re.split(r"[\\.]", model_name, maxsplit= 2)[1]
+        # species_name = re.split(r"[\\.]", model_name, maxsplit= 2)[1] # microsfot
+        species_name = re.split(r"[/.]", model_name, maxsplit= 2)[1] #linux
         species_we_have.append(species_name)
     
     # remove any bacteria from dictionary
@@ -123,7 +125,7 @@ def model_creation(model_member_dir):
     Creates the community model object from these.'''
 
     print("\n#############################")
-    print("Step 2: Creating the Communiy model")
+    print("Step 2: Creating the Community model")
     print("#############################")
 
     # load in the model members
