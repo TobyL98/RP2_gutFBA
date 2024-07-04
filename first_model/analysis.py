@@ -14,14 +14,16 @@ import time
 import argparse
 import sys
 from set_up import get_models
+from scipy import io
 
 
 # import PyCoMo
-path_root = Path("C:/Users/tobyl/OneDrive - The University of Manchester/Bioinformatics Masters/Research Project 2/Pycomo/PyCoMo/src")
+# path_root = Path("C:/Users/tobyl/OneDrive - The University of Manchester/Bioinformatics Masters/Research Project 2/Pycomo/PyCoMo/src")
+path_root = Path("/Home/Documents/Toby/PyCoMo/src/pycomo")
 sys.path.append(str(path_root))
 import pycomo
 
-# tests if an input file exists
+# tests if an input file existsython 
 def file_test(arg):
     p = Path(arg)
     if p.is_file():
@@ -73,11 +75,15 @@ def parse_args():
                         FVA.""",
                         default= False,
                         action = 'store_true')
+    parser.add_argument("-mat", "--matlab",
+                        help = """Option for using matlab file (.mat) instead of the SBML format""",
+                        default = False,
+                        action = 'store_true')
     args = parser.parse_args()
     return(args)
 
 
-def abundance_dict(df_path, FBA_models_path):
+def abundance_dict(df_path, FBA_models_path, matlab):
     '''Creates the abundance dictionary from
     an abundance dataframe
     INPUT: abundance dataframe'''
@@ -93,13 +99,16 @@ def abundance_dict(df_path, FBA_models_path):
 
     # checking model available for all bacteria in dictionary
     # if not will remove from dictionary
-    FBA_model_files = FBA_models_path.glob('*.xml')
+    if matlab == True:
+        FBA_model_files = FBA_models_path.glob('*.mat')
+    else:
+        FBA_model_files = FBA_models_path.glob('*.xml')
 
     # get bacteria names from model
     species_we_have = []
     for model in FBA_model_files:
-        model_name = str(model)
-        species_name = re.split(r"[\\.]", model_name, maxsplit= 2)[1]
+
+        species_name = model.stem
         species_we_have.append(species_name)
     
     # remove any bacteria from dictionary
@@ -116,18 +125,21 @@ def abundance_dict(df_path, FBA_models_path):
 
     return abun_dict
 
-def model_creation(model_member_dir):
+def model_creation(model_member_dir, matlab):
 
     '''Function loads the individual member models that will be used to create
     the community model and converts them to PyCoMo format. 
     Creates the community model object from these.'''
 
     print("\n#############################")
-    print("Step 2: Creating the Communiy model")
+    print("Step 2: Creating the Community model")
     print("#############################")
 
     # load in the model members
-    named_models = pycomo.load_named_models_from_dir(model_member_dir)
+    if matlab == True:
+        named_models = pycomo.load_named_models_from_dir(model_member_dir, format = "mat")
+    else:
+        named_models = pycomo.load_named_models_from_dir(model_member_dir, format = "sbml")
 
     # check if all have a biomass objective function then it is working, will flag warning if not
     for model in named_models.values():
@@ -158,7 +170,7 @@ def model_creation(model_member_dir):
     return com_model_object
 
 
-def fixed_abundance(com_model_object, abundance_dict):
+def fixed_abundance(com_model_object, abundance_dict, output_folder):
 
     '''Function generates the fixed abundance model.
     Using generated abundance data '''
@@ -175,8 +187,15 @@ def fixed_abundance(com_model_object, abundance_dict):
         
     # converting to fixed abundance model and then adding the abundances from abundance_dict
     com_model_object.convert_to_fixed_abundance()
-    abundance_dict = com_model_object.generate_equal_abundance_dict()
     com_model_object.apply_fixed_abundance(abundance_dict)
+
+    # outputting abundance dictionary for results
+    output_path = output_folder / r"abundance_dict.txt"
+    with open(output_path, 'w') as f:  
+        for key, value in abundance_dict.items():  
+            f.write("{0}:{1}\n".format(key, value))
+    f.close()
+
 
     print("\n\nFinished Creating Community Model!!!")
     return(com_model_object)
@@ -243,18 +262,18 @@ def main():
     # only runs if all_models input given
     all_models = args.all_models
     if all_models is not None:
-        get_models(args.abundance, args.all_models, args.run_models)
+        get_models(args.abundance, args.all_models, args.run_models, args.matlab)
 
     # Converting abundances from dataframe to dictionary
-    abund_dict = abundance_dict(args.abundance, args.run_models)
+    abund_dict = abundance_dict(args.abundance, args.run_models, args.matlab)
 
     start_time = time.time()
 
     # creating the community model
-    com_model_obj = model_creation(args.run_models)
+    com_model_obj = model_creation(args.run_models, args.matlab)
 
     # switching to fixed abundance model and running
-    com_model_obj = fixed_abundance(com_model_obj, abund_dict)
+    com_model_obj = fixed_abundance(com_model_obj, abund_dict, args.output_fold)
 
     # Doing the analysis to obtain outputs
     com_model_obj_final = final_analysis(com_model_obj, args.output_fold)
