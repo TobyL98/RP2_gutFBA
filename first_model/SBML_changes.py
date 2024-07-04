@@ -9,7 +9,7 @@ should work after correcting for these changes '''
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-folder_Path = Path('Agora_Western/sbml')
+folder_Path = Path('Agora_HighFiber/sbml')
 
 for file in folder_Path.glob('*.xml'):
 
@@ -32,7 +32,7 @@ for file in folder_Path.glob('*.xml'):
             member.set('{http://www.sbml.org/sbml/level3/version1/groups/version1}idRef', new_member_ID)
 
     # outputs to an updated folder
-    output_path = Path('AGORA_Western_updated') / file.name
+    output_path = Path('Agora_HighFiber_updated') / file.name
     tree.write(output_path)
 
 

@@ -2,9 +2,9 @@
 # copy_models.py
 ###################
 
-'''Copies SBML models from one folder to
-another. Only copies models that match the
-models in another folder'''
+'''Deletes SBML models that don't match the model format
+already created. This model format is the models in the
+"models" folder'''
 
 from pathlib import Path
 
@@ -32,6 +32,6 @@ models in another folder'''
 
 
 correct_models_path = Path('models')
-all_models_path = Path('Agora_western/sbml')
+all_models_path = Path('Agora_HighFiber/sbml')
 
 copy_models(correct_models_path, all_models_path)
