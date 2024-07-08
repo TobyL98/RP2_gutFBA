@@ -188,31 +188,28 @@ def generate_medium(diet_filepath, community_model_obj, output_dir):
     print("#############################")
 
     diet_df = pd.read_csv(diet_filepath, sep = "\t")
-    diet_df.loc[:, 'Reaction'] = diet_df['Reaction'].apply(lambda reaction: reaction
-                                                           .replace("[", "(")
-                                                           .replace("]", ")")
-                                                           )
+    diet_df.loc[:, 'Reaction'] = diet_df['Reaction'].apply(lambda reaction: re.split(r"\[|\(", reaction)[0])
     diet_reactionID_list = list(diet_df.loc[:, 'Reaction'])
-
-    # getting all the models in the community model
-    model_members = community_model_obj.member_models
 
     #creating the medium with the diet values
     medium_exchange_dict = {}
-    for single_org_model in model_members:
-        model = single_org_model.model
+    for medium_reaction in community_model_obj.model.exchanges:
+        medium_reaction_id = medium_reaction.id
 
-        for reaction in model.exchanges:
-            reaction_id = reaction.id
-            medium_reaction_id = reaction_id.split('(')[0] + "_medium"
-            if reaction_id # make change
-            if reaction_id in medium_exchange_dict.values():
-                continue
-            elif reaction_id in diet_reactionID_list:
-                flux = diet_df.loc[diet_df['Reaction'] == reaction_id, 'Flux Value'].values
-                medium_exchange_dict[medium_reaction_id] = float(flux[0]) 
-            else:
-                medium_exchange_dict[medium_reaction_id] = 1e-6
+        # ensuring medium_reaction_id matches ids from diet_reaction_ID_list
+        medium_reaction_parts = medium_reaction_id.split("_")
+        if medium_reaction_parts[1] == "":
+            del(medium_reaction_parts)[1]
+        del(medium_reaction_parts)[-1]
+        reaction_id = "_".join(medium_reaction_parts)
+
+        if reaction_id in medium_exchange_dict.values():
+            continue
+        elif reaction_id in diet_reactionID_list:
+            flux = diet_df.loc[diet_df['Reaction'] == reaction_id, 'Flux Value'].values
+            medium_exchange_dict[medium_reaction_id] = float(flux[0])
+        else:
+            medium_exchange_dict[medium_reaction_id] = 1e-6
 
     community_model_obj.medium = medium_exchange_dict
     community_model_obj.apply_medium()
@@ -225,7 +222,7 @@ def generate_medium(diet_filepath, community_model_obj, output_dir):
     writer.close()
 
 
-    del model_members, medium_exchange_dict, model, diet_df
+    del medium_exchange_dict, diet_df
     return community_model_obj
 
 

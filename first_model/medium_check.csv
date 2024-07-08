@@ -1,0 +1,92 @@
+,Reaction,full_reaction,lower_bound,upper_bound,Flux Value,Correct
+0,EX_10fthf,,,,0.0001257521370385,False
+1,EX_5mthf, EX__5mthf_medium: _5mthf_medium <=> ,0.0001293113132375, 1000.0),0.0001293113132375,True
+2,EX_CE2510,,,,1.0866650339605,False
+3,EX_CE4843,,,,0.114865262591682,False
+4,EX_adpcbl,,,,3.6085500605e-06,False
+5,EX_adrn,,,,0.0,False
+6,EX_ala_L, EX_ala_L_medium: ala_L_medium <=> ,37.2085636165274, 1000.0),37.2085636165274,True
+7,EX_arach,,,,1.0330553972827,False
+8,EX_arachd,,,,0.536810750978139,False
+9,EX_arg_L, EX_arg_L_medium: arg_L_medium <=> ,20.3518771021335, 1000.0),20.3518771021335,True
+10,EX_ascb_L,,,,0.58344116649402,False
+11,EX_asp_L, EX_asp_L_medium: asp_L_medium <=> ,47.0867491277091, 1000.0),47.0867491277091,True
+12,EX_avite1,,,,0.0368580802547259,False
+13,EX_btn, EX_btn_medium: btn_medium <=> ,0.0001786663279938, 1000.0),0.0001786663279938,True
+14,EX_but, EX_but_medium: but_medium <=> ,26.3342564399315, 1000.0),26.3342564399315,True
+15,EX_ca2, EX_ca2_medium: ca2_medium <=> ,18.549079295374, 1000.0),18.549079295374,True
+16,EX_caro,,,,0.0035855806386841,False
+17,EX_cellul,,,,0.052346876171936,False
+18,EX_chsterol,,,,1.23218850986736,False
+19,EX_cl, EX_cl_medium: cl_medium <=> ,375.557498660198, 1000.0),375.557498660198,True
+20,EX_clpnd,,,,0.0483768856818379,False
+21,EX_crvnc,,,,0.166300079729987,False
+22,EX_cu2, EX_cu2_medium: cu2_medium <=> ,0.0356749441349574, 1000.0),0.0356749441349574,True
+23,EX_cys_L, EX_cys_L_medium: cys_L_medium <=> ,7.5118316383043, 1000.0),7.5118316383043,True
+24,EX_dca,,,,10.7484261929606,False
+25,EX_ddca, EX_ddca_medium: ddca_medium <=> ,13.4590471717898, 1000.0),13.4590471717898,True
+26,EX_doco13ac,,,,0.560730442644664,False
+27,EX_docosac,,,,0.4540962307068,False
+28,EX_etoh, EX_etoh_medium: etoh_medium <=> ,234.434015507376, 1000.0),234.434015507376,True
+29,EX_fe2, EX_fe2_medium: fe2_medium <=> ,0.109248813680723, 1000.0),0.109248813680723,True
+30,EX_fe3, EX_fe3_medium: fe3_medium <=> ,0.109248813680723, 1000.0),0.109248813680723,True
+31,EX_fol, EX_fol_medium: fol_medium <=> ,0.0001346137907466, 1000.0),0.0001346137907466,True
+32,EX_fru, EX_fru_medium: fru_medium <=> ,106.505865197865, 1000.0),106.505865197865,True
+33,EX_gal, EX_gal_medium: gal_medium <=> ,0.0299740391516459, 1000.0),0.0299740391516459,True
+34,EX_glc_D, EX_glc_D_medium: glc_D_medium <=> ,135.580350130082, 1000.0),135.580350130082,True
+35,EX_glu_L, EX_glu_L_medium: glu_L_medium <=> ,103.122200527918, 1000.0),103.122200527918,True
+36,EX_gly, EX_gly_medium: gly_medium <=> ,36.7646862919061, 1000.0),36.7646862919061,True
+37,EX_h2o, EX_h2o_medium: h2o_medium <=> ,165892.342500366, 1000.0),165892.342500366,True
+38,EX_hdca, EX_hdca_medium: hdca_medium <=> ,92.7850671903611, 1000.0),92.7850671903611,True
+39,EX_hdcea,,,,7.1204730223287,False
+40,EX_his_L, EX_his_L_medium: his_L_medium <=> ,14.0240766306639, 1000.0),14.0240766306639,True
+41,EX_hpdca,,,,1.77952492310981,False
+42,EX_i,,,,0.0020123798633728,False
+43,EX_ile_L, EX_ile_L_medium: ile_L_medium <=> ,28.9216751325922, 1000.0),28.9216751325922,True
+44,EX_k, EX_k_medium: k_medium <=> ,83.433806584941, 1000.0),83.433806584941,True
+45,EX_lcts, EX_lcts_medium: lcts_medium <=> ,4.12671470494148, 1000.0),4.12671470494148,True
+46,EX_leu_L, EX_leu_L_medium: leu_L_medium <=> ,46.8878099058571, 1000.0),46.8878099058571,True
+47,EX_lgnc,,,,0.222615855993872,False
+48,EX_lnlc,,,,54.9854618653545,False
+49,EX_lnlnca,,,,4.1633368983032,False
+50,EX_lys_L, EX_lys_L_medium: lys_L_medium <=> ,33.3115482470592, 1000.0),33.3115482470592,True
+51,EX_malt, EX_malt_medium: malt_medium <=> ,8.41375824760113, 1000.0),8.41375824760113,True
+52,EX_met_L, EX_met_L_medium: met_L_medium <=> ,10.7274046938804, 1000.0),10.7274046938804,True
+53,EX_mg2, EX_mg2_medium: mg2_medium <=> ,14.529932112734, 1000.0),14.529932112734,True
+54,EX_mn2, EX_mn2_medium: mn2_medium <=> ,0.07470233059804, 1000.0),0.07470233059804,True
+55,EX_mnl, EX_mnl_medium: mnl_medium <=> ,0.170169038237532, 1000.0),0.170169038237532,True
+56,EX_na1, EX_na1_medium: na1_medium <=> ,172.446271718304, 1000.0),172.446271718304,True
+57,EX_nac, EX_nac_medium: nac_medium <=> ,0.30861619226627, 1000.0),0.30861619226627,True
+58,EX_ncam,,,,0.145527600499817,False
+59,EX_ocdca, EX_ocdca_medium: ocdca_medium <=> ,35.850866390117, 1000.0),35.850866390117,True
+60,EX_ocdcea,,,,101.592732580242,False
+61,EX_octa,,,,6.84557290848338,False
+62,EX_phe_L, EX_phe_L_medium: phe_L_medium <=> ,20.7149866425811, 1000.0),20.7149866425811,True
+63,EX_phyQ,,,,0.0001368772766192,False
+64,EX_pi, EX_pi_medium: pi_medium <=> ,14.2266092792925, 1000.0),14.2266092792925,True
+65,EX_pnto_R, EX_pnto_R_medium: pnto_R_medium <=> ,0.0255697049402686, 1000.0),0.0255697049402686,True
+66,EX_pro_L, EX_pro_L_medium: pro_L_medium <=> ,53.8152791831878, 1000.0),53.8152791831878,True
+67,EX_ptdca,,,,2.89407662964767,False
+68,EX_pydam, EX_pydam_medium: pydam_medium <=> ,0.0031717700644007, 1000.0),0.0031717700644007,True
+69,EX_pydx, EX_pydx_medium: pydx_medium <=> ,0.0032104585172866, 1000.0),0.0032104585172866,True
+70,EX_pydxn, EX_pydxn_medium: pydxn_medium <=> ,0.0031722050213838, 1000.0),0.0031722050213838,True
+71,EX_retinol,,,,3.00225238748885,False
+72,EX_ribflv, EX_ribflv_medium: ribflv_medium <=> ,0.0036932341279277, 1000.0),0.0036932341279277,True
+73,EX_sbt_D, EX_sbt_D_medium: sbt_D_medium <=> ,0.0329359428846836, 1000.0),0.0329359428846836,True
+74,EX_ser_L, EX_ser_L_medium: ser_L_medium <=> ,37.3792255591735, 1000.0),37.3792255591735,True
+75,EX_starch1200, EX_starch1200_medium: starch1200_medium <=> ,0.305869770147688, 1000.0),0.305869770147688,True
+76,EX_strch1, EX_strch1_medium: strch1_medium <=> ,33.0369997278473, 1000.0),33.0369997278473,True
+77,EX_strdnc,,,,0.0,False
+78,EX_sucr, EX_sucr_medium: sucr_medium <=> ,202.383021737003, 1000.0),202.383021737003,True
+79,EX_thf, EX_thf_medium: thf_medium <=> ,0.0001336958093047, 1000.0),0.0001336958093047,True
+80,EX_thm, EX_thm_medium: thm_medium <=> ,5.40785801339038, 1000.0),5.40785801339038,True
+81,EX_thr_L, EX_thr_L_medium: thr_L_medium <=> ,25.8810502421104, 1000.0),25.8810502421104,True
+82,EX_trp_L, EX_trp_L_medium: trp_L_medium <=> ,4.55482477186948, 1000.0),4.55482477186948,True
+83,EX_ttdca, EX_ttdca_medium: ttdca_medium <=> ,30.2113800398482, 1000.0),30.2113800398482,True
+84,EX_ttdcea,,,,3.78398479501178,False
+85,EX_tyr_L, EX_tyr_L_medium: tyr_L_medium <=> ,15.6468539670012, 1000.0),15.6468539670012,True
+86,EX_urate,,,,2.91939280341538,False
+87,EX_val_L, EX_val_L_medium: val_L_medium <=> ,37.7843773128131, 1000.0),37.7843773128131,True
+88,EX_vitd3,,,,8.7614916582e-06,False
+89,EX_xylt,,,,0.141969084917231,False
+90,EX_zn2, EX_zn2_medium: zn2_medium <=> ,0.150963597430407, 1000.0),0.150963597430407,True
