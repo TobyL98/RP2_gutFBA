@@ -27,7 +27,10 @@ def get_models(df_path, model_path, FBA_models_path, matlab):
         filepath.unlink()
 
 
-    df = pd.read_csv(df_path, sep = ",")
+    if isinstance(df_path, pd.DataFrame):
+        df = df_path
+    else:
+        df = pd.read_csv(df_path, sep = ",")
 
     # SBML or matlab files of all metabolic models
     if matlab == True:
@@ -64,9 +67,9 @@ def get_models(df_path, model_path, FBA_models_path, matlab):
 def main():
 
     df_path = Path("Outputs/average/healthy_df_out_ave.csv")
-    model_path = Path("Agora_Western/mat")
-    models_to_run_path = Path("models_to_run")
-    matlab = True
+    model_path = Path("Agora_Western/sbml")
+    models_to_run_path = Path("models_to_run_2")
+    matlab = False
 
     get_models(df_path, model_path, models_to_run_path, matlab)
 

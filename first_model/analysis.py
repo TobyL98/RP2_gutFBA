@@ -95,8 +95,11 @@ def abundance_dict(df_path, FBA_models_path, matlab):
     print("Step 1: Creating the abundance dictionary")
     print("#############################")
 
-    d_type = {"average_abundance": float}
-    df = pd.read_csv(df_path, sep = ",", dtype = d_type)
+    if isinstance(df_path, pd.DataFrame):
+        df = df_path
+    else:
+        d_type = {"average_abundance": float}
+        df = pd.read_csv(df_path, sep = ",", dtype = d_type)
     abun_df = df.set_index('Genus')['average_abundance']
     abun_dict = abun_df.to_dict()
 
