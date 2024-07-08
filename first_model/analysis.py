@@ -79,6 +79,9 @@ def parse_args():
                         help = """Option for using matlab file (.mat) instead of the SBML format""",
                         default = False,
                         action = 'store_true')
+    parser.add_argument("-d", "--diet_medium",
+                        help = """Option for adding a tsv file for flux values for a specific diet. Specific diets
+                        can be downloaded from https://www.vmh.life/#nutrition""")
     args = parser.parse_args()
     return(args)
 
@@ -121,8 +124,7 @@ def abundance_dict(df_path, FBA_models_path, matlab):
     total_abun = sum(abun_dict.values())
     for key, value in abun_dict.items():
         new_value = value / total_abun
-        abun_dict[key] = new_value
-
+        abun_dict[key] = new_value   
     return abun_dict
 
 def model_creation(model_member_dir, matlab):
@@ -169,6 +171,63 @@ def model_creation(model_member_dir, matlab):
 
     return com_model_object
 
+def generate_medium(diet_filepath, community_model_obj, output_dir):
+    '''
+    Generates a community model specific medium
+    from the reaction fluxes specified in a tsv
+    file from the diet calculator in vmh.life
+    https://www.vmh.life/#nutrition
+    Then applies the medium to the model
+
+    :param diet_filepath: the filepath for tsv file with the diet fluxes
+    :param com_model: the community model object from PyCoMO
+    '''
+
+    print("\n#############################")
+    print("Step 2a: Generating medium for model")
+    print("#############################")
+
+    diet_df = pd.read_csv(diet_filepath, sep = "\t")
+    diet_df.loc[:, 'Reaction'] = diet_df['Reaction'].apply(lambda reaction: reaction
+                                                           .replace("[", "(")
+                                                           .replace("]", ")")
+                                                           )
+    diet_reactionID_list = list(diet_df.loc[:, 'Reaction'])
+
+    # getting all the models in the community model
+    model_members = community_model_obj.member_models
+
+    #creating the medium with the diet values
+    medium_exchange_dict = {}
+    for single_org_model in model_members:
+        model = single_org_model.model
+
+        for reaction in model.exchanges:
+            reaction_id = reaction.id
+            medium_reaction_id = reaction_id.split('(')[0] + "_medium"
+            if reaction_id # make change
+            if reaction_id in medium_exchange_dict.values():
+                continue
+            elif reaction_id in diet_reactionID_list:
+                flux = diet_df.loc[diet_df['Reaction'] == reaction_id, 'Flux Value'].values
+                medium_exchange_dict[medium_reaction_id] = float(flux[0]) 
+            else:
+                medium_exchange_dict[medium_reaction_id] = 1e-6
+
+    community_model_obj.medium = medium_exchange_dict
+    community_model_obj.apply_medium()
+
+    output_fp = output_dir / r"medium_fluxes.csv"
+    with open(output_fp, 'w') as writer:
+        for reaction in community_model_obj.model.reactions:
+            if "medium" in reaction.id:
+                writer.write("{0}, {1}, {2}\n".format(reaction.id, reaction, reaction.bounds))
+    writer.close()
+
+
+    del model_members, medium_exchange_dict, model, diet_df
+    return community_model_obj
+
 
 def fixed_abundance(com_model_object, abundance_dict, output_folder):
 
@@ -176,7 +235,7 @@ def fixed_abundance(com_model_object, abundance_dict, output_folder):
     Using generated abundance data '''
 
     print("\n#############################")
-    print("\nStep 3: Creating Fixed abundance community model\n\n")
+    print("Step 3: Creating Fixed abundance community model")
     print("#############################")
 
     # creating the abundance_dict
@@ -199,6 +258,7 @@ def fixed_abundance(com_model_object, abundance_dict, output_folder):
 
     print("\n\nFinished Creating Community Model!!!")
     return(com_model_object)
+
 
 
 def final_analysis(com_model_object, output_dir):
@@ -271,6 +331,11 @@ def main():
 
     # creating the community model
     com_model_obj = model_creation(args.run_models, args.matlab)
+
+    # generating the medium from a defined diet
+    if args.diet_medium is not None:
+        com_model_obj = generate_medium(args.diet_medium, com_model_obj, args.output_fold)
+
 
     # switching to fixed abundance model and running
     com_model_obj = fixed_abundance(com_model_obj, abund_dict, args.output_fold)
