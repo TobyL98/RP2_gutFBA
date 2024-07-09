@@ -304,7 +304,7 @@ def final_analysis(com_model_object, output_dir):
         print("""\nOutputs are:
               Objective_flux: {0}
               Uptake fluxes: {1}
-              Secretion fluxes: {1}""".format(up_flux_path, sec_flux_path))
+              Secretion fluxes: {2}""".format(obj_value_path,up_flux_path, sec_flux_path))
 
         return com_model_object
 
