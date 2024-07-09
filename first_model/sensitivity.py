@@ -9,8 +9,9 @@ modelling and community biomass generation'''
 
 import pandas as pd
 from pathlib import Path 
+import time
 from average_abundance import average_abundance
-from analysis import abundance_dict
+from analysis import abundance_dict, model_creation, generate_medium, fixed_abundance, final_analysis
 from set_up import get_models
 
 def main():
@@ -39,27 +40,45 @@ def main():
     Stage_I_II_df = pd.read_csv(Stage_I_II_path, sep = ',')
 
     # loop through different cut offs
+    objective_flux_list = []
     for cut_off in cut_off_list:
+        print("\n###############")
+        print("Running FBA of abundance cut off {0}".format(cut_off))
+        print("###############")
+
+        start_time = time.time()
+
         healthy_average_df = average_abundance(healthy_df, cut_off)
         # StageI_II_average_df = average_abundance(Stage_I_II_df, cut_off)
 
+        # output folder
+        output_dir_path = overall_output_fp / r"cutoff_{0}".format(str(cut_off))
+        output_dir_path.mkdir()
+
+        # run analysis
+        # getting correct models
+        get_models(healthy_average_df, all_models_fp, run_models_fp, matlab)
 
 
-    # run analysis
-    # getting correct models
-    get_models(healthy_average_df, all_models_fp, run_models_fp, matlab)
+        # Converting abundances from dataframe to dictionary
+        abund_dict = abundance_dict(healthy_average_df, run_models_fp, matlab)
 
+        # creating the community model
+        com_model_obj = model_creation(run_models_fp, matlab)
 
-    # Converting abundances from dataframe to dictionary
-    abund_dict = abundance_dict(healthy_average_df, run_models_fp, matlab)
+        # generate the correct diet
+        if diet_medium_fp is not None:
+            com_model_obj = generate_medium(diet_medium_fp, com_model_obj, output_dir_path)
 
-    # creating the community model
-    com_model_obj = model_creation(run_models_fp, matlab)
+        # creating fixed abundance model
+        com_model_obj = fixed_abundance(com_model_obj, abund_dict, output_dir_path)
 
-    # generate the correct diet
-    if diet_medium is not None:
-        com_model_obj = generate_medium(diet_medium_fp, com_model_obj, output_fold_fp)
+        # final analysis
+        com_model_obj_final = final_analysis(com_model_obj, output_dir_path)
 
+        end_time = time.time()
+        elapsed_time = (end_time - start_time) / 60
+        print("\nElapsed time for run: {0}".format(elapsed_time))
 
 if __name__ == "__main__":
     main()
