@@ -270,6 +270,8 @@ def final_analysis(com_model_object, output_dir):
     print("\n#############################")
     print("Step 4: Creating Outputs")
     print("#############################")
+    com_model_object.model.solver = 'gurobi'
+    print(type(com_model_object.model.solver))
     solution = com_model_object.model.optimize()
     summary = com_model_object.summary()
 
