@@ -30,7 +30,7 @@ def main():
 
 
     # list of cut offs to run
-    cut_off_list = 0.3, 0.4, 0.5
+    cut_off_list = 0.3, 0.4, 0.5, 0.7, 0.9
 
     # read in files
     healthy_path = Path("Outputs/healthy_df_out.csv")
@@ -69,6 +69,7 @@ def main():
         # generate the correct diet
         if diet_medium_fp is not None:
             com_model_obj = generate_medium(diet_medium_fp, com_model_obj, output_dir_path)
+            
 
         # creating fixed abundance model
         com_model_obj = fixed_abundance(com_model_obj, abund_dict, output_dir_path)
@@ -79,6 +80,13 @@ def main():
         end_time = time.time()
         elapsed_time = (end_time - start_time) / 60
         print("\nElapsed time for run: {0}".format(elapsed_time))
+        time_filepath = output_dir_path / r"time_taken.txt"
+        with open(time_filepath, "w") as f:
+            f.write("Time taken to run:{0}".format(elapsed_time))
+        f.close()
+            
+           
+        
 
 if __name__ == "__main__":
     main()
