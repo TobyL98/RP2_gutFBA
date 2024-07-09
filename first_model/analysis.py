@@ -95,8 +95,11 @@ def abundance_dict(df_path, FBA_models_path, matlab):
     print("Step 1: Creating the abundance dictionary")
     print("#############################")
 
-    d_type = {"average_abundance": float}
-    df = pd.read_csv(df_path, sep = ",", dtype = d_type)
+    if isinstance(df_path, pd.DataFrame):
+        df = df_path
+    else:
+        d_type = {"average_abundance": float}
+        df = pd.read_csv(df_path, sep = ",", dtype = d_type)
     abun_df = df.set_index('Genus')['average_abundance']
     abun_dict = abun_df.to_dict()
 
@@ -287,10 +290,18 @@ def final_analysis(com_model_object, output_dir):
 
         # can get the objective value
         print("\nFlux of the objective value:")
-        print(solution.objective_value) # how to get the objective_value
+        objective_value = solution.objective_value
+        print(objective_value)
+
+        obj_value_path = output_dir / r"objective_value.txt"
+        with open(obj_value_path, 'w') as f:
+            f.write("Objective value, {0}".format(objective_value))
+        f.close
+
 
         print("""\nOutputs are:
-              Uptake fluxes: {0}
+              Objective_flux: {0}
+              Uptake fluxes: {1}
               Secretion fluxes: {1}""".format(up_flux_path, sec_flux_path))
 
         return com_model_object
