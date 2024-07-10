@@ -25,7 +25,7 @@ def main():
     all_models_fp = Path('models')
     run_models_fp = Path('models_to_run_2')
     diet_medium_fp = Path("diet_info/average_EU_fluxes.tsv")
-    overall_output_fp = Path("Results/sensitivity")
+    overall_output_fp = Path("Results/sensitivity_gurobi")
     matlab = False
 
 

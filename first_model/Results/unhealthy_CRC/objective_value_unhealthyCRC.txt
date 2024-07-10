@@ -1,0 +1,5 @@
+<<<<<<< HEAD:first_model/Results/unhealthy_CRC/objective_value.txt
+Objective value, 0.00016319323615649947
+=======
+Objective value, 0.00017622046660295974
+>>>>>>> e5f84463a2d7193ec3baa8681a113cd356f13e3a:first_model/Results/Western_CRC/objective_value.txt
