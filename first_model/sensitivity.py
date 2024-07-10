@@ -30,7 +30,7 @@ def main():
 
 
     # list of cut offs to run
-    cut_off_list = 0.3, 0.4, 0.5, 0.7, 0.9
+    cut_off_list = [0.99]
 
     # read in files
     healthy_path = Path("Outputs/healthy_df_out.csv")
