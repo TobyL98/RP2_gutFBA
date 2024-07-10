@@ -212,7 +212,7 @@ def generate_medium(diet_filepath, community_model_obj, output_dir):
             flux = diet_df.loc[diet_df['Reaction'] == reaction_id, 'Flux Value'].values
             medium_exchange_dict[medium_reaction_id] = float(flux[0])
         else:
-            medium_exchange_dict[medium_reaction_id] = 1e-6
+            medium_exchange_dict[medium_reaction_id] = 0.0
 
     community_model_obj.medium = medium_exchange_dict
     community_model_obj.apply_medium()
