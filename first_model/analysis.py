@@ -217,7 +217,8 @@ def generate_medium(diet_filepath, community_model_obj, output_dir):
     community_model_obj.medium = medium_exchange_dict
     community_model_obj.apply_medium()
 
-    output_fp = output_dir / r"medium_fluxes.csv"
+    output_stem = output_dir.stem
+    output_fp = output_dir / r"medium_fluxes_{0}.csv".format(output_stem)
     with open(output_fp, 'w') as writer:
         for reaction in community_model_obj.model.reactions:
             if "medium" in reaction.id:
@@ -249,7 +250,8 @@ def fixed_abundance(com_model_object, abundance_dict, output_folder):
     com_model_object.apply_fixed_abundance(abundance_dict)
 
     # outputting abundance dictionary for results
-    output_path = output_folder / r"abundance_dict.txt"
+    output_stem = output_folder.stem
+    output_path = output_folder / r"abundance_dict_{0}.txt".format(output_stem)
     with open(output_path, 'w') as f:  
         for key, value in abundance_dict.items():  
             f.write("{0}:{1}\n".format(key, value))
@@ -284,8 +286,9 @@ def final_analysis(com_model_object, output_dir):
         up_flux = summary.uptake_flux # how to get the uptake flux
         sec_flux = summary.secretion_flux # how to get the secretion flux
 
-        up_flux_path = output_dir / r"up_flux.csv"
-        sec_flux_path = output_dir / r"sec_flux.csv"
+        output_stem = output_dir.stem
+        up_flux_path = output_dir / r"up_flux_{0}.csv".format(output_stem)
+        sec_flux_path = output_dir / r"sec_flux_{0}.csv".format(output_stem)
         up_flux.to_csv(up_flux_path)
         sec_flux.to_csv(sec_flux_path)
 
@@ -295,7 +298,7 @@ def final_analysis(com_model_object, output_dir):
         objective_value = solution.objective_value
         print(objective_value)
 
-        obj_value_path = output_dir / r"objective_value.txt"
+        obj_value_path = output_dir / r"objective_value_{0}.txt".format(output_stem)
         with open(obj_value_path, 'w') as f:
             f.write("Objective value, {0}".format(objective_value))
         f.close
@@ -317,7 +320,9 @@ def metabolite_exchange(com_model_object, output_dir):
     print("Step 5: Calculating Metabolic Exchanges:")
     print("#############################")
     MES = com_model_object.potential_metabolite_exchanges()
-    MES_path = output_dir / r"mes_results.csv"
+
+    output_stem = output_dir.stem
+    MES_path = output_dir / r"mes_results_{0}.csv".format(output_stem)
     MES.to_csv(MES_path)
     del MES
     print("\n OUTPUT: {0}".format(MES_path))
