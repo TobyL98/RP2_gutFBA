@@ -25,12 +25,12 @@ def main():
     all_models_fp = Path('models')
     run_models_fp = Path('models_to_run_2')
     diet_medium_fp = Path("diet_info/average_EU_fluxes.tsv")
-    overall_output_fp = Path("Results/sensitivity_healthy")
+    overall_output_fp = Path("Results/sensitivity_CRC")
     matlab = False
 
 
     # list of cut offs to run
-    cut_off_list = [0.6]
+    cut_off_list = [0.95]
 
     # read in files
     healthy_path = Path("Outputs/healthy_df_out.csv")
@@ -48,7 +48,7 @@ def main():
 
         start_time = time.time()
 
-        average_df = average_abundance(healthy_df, cut_off)
+        average_df = average_abundance(Stage_I_II_df, cut_off)
 
         # output folder
         cut_off_name = str(cut_off).split('.')[1]
