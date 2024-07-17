@@ -25,12 +25,12 @@ def main():
     all_models_fp = Path('models')
     run_models_fp = Path('models_to_run_2')
     diet_medium_fp = Path("diet_info/average_EU_fluxes.tsv")
-    overall_output_fp = Path("Results/sensitivity_gurobi")
+    overall_output_fp = Path("Results/sensitivity_CRC")
     matlab = False
 
 
     # list of cut offs to run
-    cut_off_list = [0.80]
+    cut_off_list = [0.3, 0.4, 0.5, 0.8, 0.9]
 
     # read in files
     healthy_path = Path("Outputs/healthy_df_out.csv")
@@ -48,20 +48,21 @@ def main():
 
         start_time = time.time()
 
-        healthy_average_df = average_abundance(healthy_df, cut_off)
-        # StageI_II_average_df = average_abundance(Stage_I_II_df, cut_off)
+        average_df = average_abundance(Stage_I_II_df, cut_off)
 
         # output folder
-        output_dir_path = overall_output_fp / r"cutoff_{0}".format(str(cut_off))
+        cut_off_name = str(cut_off).split('.')[1]
+        output_dir_path = overall_output_fp / r"cutoff_{0}".format(cut_off_name)
+        print(output_dir_path)
         output_dir_path.mkdir()
 
         # run analysis
         # getting correct models
-        get_models(healthy_average_df, all_models_fp, run_models_fp, matlab)
+        get_models(average_df, all_models_fp, run_models_fp, matlab)
 
 
         # Converting abundances from dataframe to dictionary
-        abund_dict = abundance_dict(healthy_average_df, run_models_fp, matlab)
+        abund_dict = abundance_dict(average_df, run_models_fp, matlab)
 
         # creating the community model
         com_model_obj = model_creation(run_models_fp, matlab)
