@@ -19,9 +19,13 @@ from scipy import io
 
 # import PyCoMo
 # path_root = Path("C:/Users/tobyl/OneDrive - The University of Manchester/Bioinformatics Masters/Research Project 2/Pycomo/PyCoMo/src")
-path_root = Path("/Home/Documents/Toby/PyCoMo/src/pycomo")
+# path_root = Path("/Home/Documents/Toby/PyCoMo/src/pycomo")
+path_root = Path("Pycomo/src")
 sys.path.append(str(path_root))
-import pycomo
+try:
+    import pycomo
+except:
+    print("Cannot import Pycomo")
 
 # tests if an input file existsython 
 def file_test(arg):
@@ -212,7 +216,7 @@ def generate_medium(diet_filepath, community_model_obj, output_dir):
             flux = diet_df.loc[diet_df['Reaction'] == reaction_id, 'Flux Value'].values
             medium_exchange_dict[medium_reaction_id] = float(flux[0])
         else:
-            medium_exchange_dict[medium_reaction_id] = 0.0
+            medium_exchange_dict[medium_reaction_id] = 1e-6
 
     community_model_obj.medium = medium_exchange_dict
     community_model_obj.apply_medium()
