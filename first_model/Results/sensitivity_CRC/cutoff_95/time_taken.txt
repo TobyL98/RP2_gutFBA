@@ -1,1 +1,1 @@
-Time taken to run:23.64780426820119
+Time taken to run:23.586792568365734

@@ -8,11 +8,20 @@ cretain abundance effect the community
 modelling and community biomass generation'''
 
 import pandas as pd
-from pathlib import Path 
+from pathlib import Path
+import cobra 
 import time
 from average_abundance import average_abundance
 from analysis import abundance_dict, model_creation, generate_medium, fixed_abundance, final_analysis
 from set_up import get_models
+
+# import pycomo
+path_root = Path("Pycomo/src")
+sys.path.append(str(path_root))
+try:
+    import pycomo
+except:
+    print("Cannot import Pycomo")
 
 def main():
 
