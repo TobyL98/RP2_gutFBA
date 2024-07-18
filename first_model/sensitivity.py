@@ -30,7 +30,7 @@ def main():
 
 
     # list of cut offs to run
-    cut_off_list = [0.95]
+    cut_off_list = [0.35]
 
     # read in files
     healthy_path = Path("Outputs/healthy_df_out.csv")
@@ -53,7 +53,6 @@ def main():
         # output folder
         cut_off_name = str(cut_off).split('.')[1]
         output_dir_path = overall_output_fp / r"cutoff_{0}".format(cut_off_name)
-        print(output_dir_path)
         output_dir_path.mkdir()
 
         # run analysis

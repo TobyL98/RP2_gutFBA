@@ -41,13 +41,13 @@ def average_abundance(df, cut_off):
 
 
 # main
-cut_off = 0.95
+cut_off = 0.35
 
 healthy_average_df = average_abundance(healthy_df, cut_off)
 StageI_II_average_df = average_abundance(Stage_I_II_df, cut_off)
 
-healthy_average_df.to_csv("Outputs/average/healthy_df_out_ave.csv")
-StageI_II_average_df.to_csv("Outputs/average/StageI_II_df_out_ave.csv")
+healthy_average_df.to_csv("Outputs/average/healthy_df_out_ave_35.csv")
+StageI_II_average_df.to_csv("Outputs/average/StageI_II_df_out_ave_35.csv")
 
 
 
