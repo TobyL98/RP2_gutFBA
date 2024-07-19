@@ -1,3 +1,3 @@
-Bacteroides:0.33333333333333337
-Faecalibacterium:0.33333333333333337
-Bifidobacterium:0.33333333333333337
+Bacteroides:0.5
+Faecalibacterium:0.5
+Bifidobacterium:0.0

@@ -14,6 +14,7 @@ import time
 import argparse
 import sys
 from set_up import get_models
+from average_abundance_script import average_abundance
 from scipy import io
 
 
@@ -65,9 +66,9 @@ def parse_args():
                         type = directory_test)
     parser.add_argument("-a", "--abundance",
                         help = """The abundance dataframe with the abundances
-                        for each organism in the model. Make sure the bacteria
-                        are the same as in the model""",
-                        default= 'Outputs/average/healthy_df_out_ave.csv',
+                        for each organism in the model for one or more samples. Make sure the bacteria
+                        are the same as in the model. Example format is: Outputs/healthy_df_out.csv""",
+                        default= 'Outputs/healthy_df_out.csv',
                         type = file_test)
     parser.add_argument("-o", "--output_fold",
                         help = """The folder the outputs are saved into. It will create
@@ -86,6 +87,11 @@ def parse_args():
     parser.add_argument("-d", "--diet_medium",
                         help = """Option for adding a tsv file for flux values for a specific diet. Specific diets
                         can be downloaded from https://www.vmh.life/#nutrition""")
+    parser.add_argument("-ac", "--abun_cutoff",
+                        help = """the decimal you want as the cut off for bacterial abundance from 0 to 1.
+                        For example 0.95 will use all the bacterial genera that make up 95 percent of
+                        the total abundance within the sample(s)""",
+                        default= 0.95)
     args = parser.parse_args()
     return(args)
 
@@ -337,14 +343,19 @@ def main():
 
     args = parse_args()
 
+    # calculate average abundance for a certain cut off
+    abundance_df = pd.read_csv(args.abundance, sep = ',')
+    average_df = average_abundance(abundance_df, args.abun_cutoff)
+    print("erm")
+
     # getting the models required for the specific Community
     # only runs if all_models input given
     all_models = args.all_models
     if all_models is not None:
-        get_models(args.abundance, args.all_models, args.run_models, args.matlab)
+        get_models(average_df, args.all_models, args.run_models, args.matlab)
 
     # Converting abundances from dataframe to dictionary
-    abund_dict = abundance_dict(args.abundance, args.run_models, args.matlab)
+    abund_dict = abundance_dict(average_df, args.run_models, args.matlab)
 
     start_time = time.time()
 

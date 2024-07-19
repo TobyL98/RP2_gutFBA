@@ -11,13 +11,6 @@ for each participant. Then calculates the cumalative abundance
 and picks out the number of species at a certain cumalative abundance
 e.g., 0.95 (95%) or 0.99 (99%)'''
 
-# read in files
-healthy_path = Path("Outputs/healthy_df_out.csv")
-healthy_df = pd.read_csv(healthy_path, sep = ',')
-
-Stage_I_II_path = Path("Outputs/Stage_I_II_df_out.csv")
-Stage_I_II_df = pd.read_csv(Stage_I_II_path, sep = ',')
-
 def average_abundance(df, cut_off):
 
     '''Function will calculate the average
@@ -45,14 +38,25 @@ def average_abundance(df, cut_off):
 
 
 # main
-cut_off = 0.95
 
-healthy_average_df = average_abundance(healthy_df, cut_off)
-StageI_II_average_df = average_abundance(Stage_I_II_df, cut_off)
+def main():
+    cut_off = 0.95
+    
+    # read in files
+    healthy_path = Path("Outputs/healthy_df_out.csv")
+    healthy_df = pd.read_csv(healthy_path, sep = ',')
+    
+    Stage_I_II_path = Path("Outputs/Stage_I_II_df_out.csv")
+    Stage_I_II_df = pd.read_csv(Stage_I_II_path, sep = ',')
+    
+    healthy_average_df = average_abundance(healthy_df, cut_off)
+    StageI_II_average_df = average_abundance(Stage_I_II_df, cut_off)
+    
+    healthy_average_df.to_csv("Outputs/average/healthy_df_out_ave95.csv")
+    StageI_II_average_df.to_csv("Outputs/average/StageI_II_df_out_ave95.csv")
 
-healthy_average_df.to_csv("Outputs/average/healthy_df_out_ave95.csv")
-StageI_II_average_df.to_csv("Outputs/average/StageI_II_df_out_ave95.csv")
-
+if __name__ == "__main__":
+    main()
 
 
 

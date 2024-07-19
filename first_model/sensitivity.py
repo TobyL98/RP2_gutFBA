@@ -43,12 +43,11 @@ def main():
     cut_off_list = [0.35]
 
     # read in files
-    d_type = {"average_abundance": float}
     healthy_path = Path("Outputs/healthy_df_out.csv")
-    healthy_df = pd.read_csv(healthy_path, sep = ',', dtype= d_type)
+    healthy_df = pd.read_csv(healthy_path, sep = ',')
 
     Stage_I_II_path = Path("Outputs/Stage_I_II_df_out.csv")
-    Stage_I_II_df = pd.read_csv(Stage_I_II_path, sep = ',', dtype = d_type)
+    Stage_I_II_df = pd.read_csv(Stage_I_II_path, sep = ',')
 
     # loop through different cut offs
     objective_flux_list = []

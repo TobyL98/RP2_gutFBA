@@ -18,7 +18,7 @@ def get_models(df_path, model_path, FBA_models_path, matlab):
     Requirements: must have dataframe column 'Genus'''
 
     print("\n#############################")
-    print("Pre-step: Obtaining the Correct Models")
+    print("Pre-step 2: Obtaining the Correct Models")
     print("#############################")
     # deleting any exisiting models in FBA models
     # folder
