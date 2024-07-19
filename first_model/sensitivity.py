@@ -12,7 +12,7 @@ from pathlib import Path
 import cobra 
 import time
 import sys
-from average_abundance import average_abundance
+from average_abundance_script import average_abundance
 from analysis import abundance_dict, model_creation, generate_medium, fixed_abundance, final_analysis
 from set_up import get_models
 
