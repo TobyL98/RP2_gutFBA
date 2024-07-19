@@ -92,6 +92,11 @@ def parse_args():
                         For example 0.95 will use all the bacterial genera that make up 95 percent of
                         the total abundance within the sample(s)""",
                         default= 0.95)
+    parser.add_argument("-i", "--infeasible_loops", 
+                        help = """Calculates the possible metabolic exchnages between bacteria in FBA.If a bacteria forms
+                        a loop with another bacteria this may be a problem""",
+                        default = False,
+                        action = 'store_true')
     args = parser.parse_args()
     return(args)
 
@@ -313,11 +318,21 @@ def final_analysis(com_model_object, output_dir):
             f.write("Objective value, {0}".format(objective_value))
         f.close
 
+        # get the biomass contribution for each species
+        species_contrib_path = output_dir / r"spec_biomass_{0}.csv".format(output_stem)
+        with open(species_contrib_path, 'w') as file:
+            for reaction_name, flux in solution.fluxes.items():
+                # gets the contribution to community biomass
+                if "to_community_biomass" in reaction_name and "SK" not in reaction_name:
+                    file.write("{0}, {1}\n")
+            file.close
+
 
         print("""\nOutputs are:
               Objective_flux: {0}
               Uptake fluxes: {1}
-              Secretion fluxes: {2}""".format(obj_value_path,up_flux_path, sec_flux_path))
+              Secretion fluxes: {2}
+              Species biomass contribution: {3}""".format(obj_value_path,up_flux_path, sec_flux_path, species_contrib_path))
 
         return com_model_object
 
@@ -337,6 +352,26 @@ def metabolite_exchange(com_model_object, output_dir):
     del MES
     print("\n OUTPUT: {0}".format(MES_path))
 
+def infeasible_loops_check(com_model_object, output_dir):
+
+    '''Calculates the metabolic exchanges between
+    organisms in FBA. Can analyse results and if two species
+    are both feeding and producing each other then their may
+    be a problem'''
+
+    print("\n#############################")
+    print("calculating metabolic exchanges for FBA. Should show infeasible loops:")
+    print("#############################")
+
+    FBA_exchanges = com_model_object.potential_metabolite_exchanges(fba = True)
+
+    output_stem = output_dir.stem
+    FBA_exchanges_path = output_dir / r"FBA_exchanges_{0}.csv".format(output_stem)
+    FBA_exchanges.to_csv(FBA_exchanges_path)
+    del FBA_exchanges
+    print("\n OUTPUT: {0}".format(FBA_exchanges_path))
+
+
 def main():
 
     """Function that runs the code"""
@@ -346,7 +381,6 @@ def main():
     # calculate average abundance for a certain cut off
     abundance_df = pd.read_csv(args.abundance, sep = ',')
     average_df = average_abundance(abundance_df, args.abun_cutoff)
-    print("erm")
 
     # getting the models required for the specific Community
     # only runs if all_models input given
@@ -382,6 +416,12 @@ def main():
     else:
         print("""\nNOTICE: Not calculating metabolite exchanges as
               Solution may be infeasible""")
+        
+    # working out metabolic exchnages under FBA
+    # to chekc for infeasible loops
+    infeasible_loops = args.infeasible_loops
+    if infeasible_loops == True and com_model_obj_final:
+        infeasible_loops_check(com_model_obj_final, args.output_fold)
 
     end_time = time.time()
     elapsed_time = (end_time - start_time) / 60
