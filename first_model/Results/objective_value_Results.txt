@@ -1,1 +1,1 @@
-Objective value, 0.00017505885189542293
+Objective value, 60.65742112217202

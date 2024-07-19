@@ -11,6 +11,7 @@ import pandas as pd
 from pathlib import Path
 import cobra 
 import time
+import sys
 from average_abundance import average_abundance
 from analysis import abundance_dict, model_creation, generate_medium, fixed_abundance, final_analysis
 from set_up import get_models
@@ -42,11 +43,12 @@ def main():
     cut_off_list = [0.35]
 
     # read in files
+    d_type = {"average_abundance": float}
     healthy_path = Path("Outputs/healthy_df_out.csv")
-    healthy_df = pd.read_csv(healthy_path, sep = ',')
+    healthy_df = pd.read_csv(healthy_path, sep = ',', dtype= d_type)
 
     Stage_I_II_path = Path("Outputs/Stage_I_II_df_out.csv")
-    Stage_I_II_df = pd.read_csv(Stage_I_II_path, sep = ',')
+    Stage_I_II_df = pd.read_csv(Stage_I_II_path, sep = ',', dtype = d_type)
 
     # loop through different cut offs
     objective_flux_list = []
