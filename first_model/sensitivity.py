@@ -35,15 +35,15 @@ def main():
     all_models_fp = Path('models')
     run_models_fp = Path('models_to_run_2')
     diet_medium_fp = Path("diet_info/average_EU_fluxes.tsv")
-    overall_output_fp = Path("final_results/sensitivity_CRC")
+    overall_output_fp = Path("final_results/sensitivity_healthy")
     matlab = False
 
 
     # list of cut offs to run
-    cut_off_list = [0.9]
+    cut_off_list = [0.95]
 
     # read in files
-    input_path = Path("Outputs/Stage_I_II_df_out.csv")
+    input_path = Path("Outputs/healthy_df_out.csv")
     input_df = pd.read_csv(input_path, sep = ',')
 
     # loop through different cut offs
