@@ -1,6 +1,6 @@
 #folders to ignore
 first_model/models_to_run/
-first_model/models_to_run2/
+first_model/models_to_run_2/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
