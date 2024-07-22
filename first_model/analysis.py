@@ -324,7 +324,7 @@ def final_analysis(com_model_object, output_dir):
             for reaction_name, flux in solution.fluxes.items():
                 # gets the contribution to community biomass
                 if "to_community_biomass" in reaction_name and "SK" not in reaction_name:
-                    file.write("{0}, {1}\n")
+                    file.write("{0}, {1}\n".format(reaction_name, flux))
             file.close
 
 
