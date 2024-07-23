@@ -21,7 +21,8 @@ def flux_diff(healthy_df, CRC_df):
     merged_df = merged_df.loc[:,['metabolite', 'reaction', 'flux_healthy', "flux_CRC"]]
 
     merged_df['flux_diff'] = merged_df['flux_healthy'] - merged_df['flux_CRC']
-    merged_df['perc_flux_diff'] = merged_df['flux_diff'] / merged_df['flux_healthy']
+    merged_df['perc_flux_diff'] = (merged_df['flux_diff'] / 
+                                   ((merged_df['flux_healthy'] + merged_df['flux_CRC']) / 2)) * 100
     merged_df = merged_df.sort_values(by = ['flux_diff'])
 
     print("Top 5 differences shifted towards healthy")
