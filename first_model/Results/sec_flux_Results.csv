@@ -62,7 +62,7 @@ EX_MGlcn128_rl_medium,0.0,EX_MGlcn128_rl_medium,MGlcn128_rl_medium
 EX_MGlcn129_medium,0.0,EX_MGlcn129_medium,MGlcn129_medium
 EX_MGlcn129_rl_medium,0.0,EX_MGlcn129_rl_medium,MGlcn129_rl_medium
 EX_MGlcn12_medium,0.0,EX_MGlcn12_medium,MGlcn12_medium
-EX_MGlcn12_rl_medium,-1.1762687104011593,EX_MGlcn12_rl_medium,MGlcn12_rl_medium
+EX_MGlcn12_rl_medium,0.0,EX_MGlcn12_rl_medium,MGlcn12_rl_medium
 EX_MGlcn130_medium,0.0,EX_MGlcn130_medium,MGlcn130_medium
 EX_MGlcn130_rl_medium,0.0,EX_MGlcn130_rl_medium,MGlcn130_rl_medium
 EX_MGlcn131_medium,0.0,EX_MGlcn131_medium,MGlcn131_medium
@@ -112,6 +112,7 @@ EX_MGlcn150_rl_medium,0.0,EX_MGlcn150_rl_medium,MGlcn150_rl_medium
 EX_MGlcn151_medium,0.0,EX_MGlcn151_medium,MGlcn151_medium
 EX_MGlcn151_rl_medium,0.0,EX_MGlcn151_rl_medium,MGlcn151_rl_medium
 EX_MGlcn152_medium,0.0,EX_MGlcn152_medium,MGlcn152_medium
+EX_MGlcn152_rl_medium,0.0,EX_MGlcn152_rl_medium,MGlcn152_rl_medium
 EX_MGlcn153_medium,0.0,EX_MGlcn153_medium,MGlcn153_medium
 EX_MGlcn153_rl_medium,0.0,EX_MGlcn153_rl_medium,MGlcn153_rl_medium
 EX_MGlcn154_medium,0.0,EX_MGlcn154_medium,MGlcn154_medium
@@ -175,7 +176,6 @@ EX_MGlcn17_rl_medium,0.0,EX_MGlcn17_rl_medium,MGlcn17_rl_medium
 EX_MGlcn180_medium,0.0,EX_MGlcn180_medium,MGlcn180_medium
 EX_MGlcn180_rl_medium,0.0,EX_MGlcn180_rl_medium,MGlcn180_rl_medium
 EX_MGlcn181_medium,0.0,EX_MGlcn181_medium,MGlcn181_medium
-EX_MGlcn181_rl_medium,0.0,EX_MGlcn181_rl_medium,MGlcn181_rl_medium
 EX_MGlcn182_medium,0.0,EX_MGlcn182_medium,MGlcn182_medium
 EX_MGlcn182_rl_medium,0.0,EX_MGlcn182_rl_medium,MGlcn182_rl_medium
 EX_MGlcn183_medium,0.0,EX_MGlcn183_medium,MGlcn183_medium
@@ -199,7 +199,7 @@ EX_MGlcn191_rl_medium,0.0,EX_MGlcn191_rl_medium,MGlcn191_rl_medium
 EX_MGlcn192_medium,0.0,EX_MGlcn192_medium,MGlcn192_medium
 EX_MGlcn192_rl_medium,0.0,EX_MGlcn192_rl_medium,MGlcn192_rl_medium
 EX_MGlcn193_medium,0.0,EX_MGlcn193_medium,MGlcn193_medium
-EX_MGlcn193_rl_medium,0.0,EX_MGlcn193_rl_medium,MGlcn193_rl_medium
+EX_MGlcn193_rl_medium,-1.1762687104011598,EX_MGlcn193_rl_medium,MGlcn193_rl_medium
 EX_MGlcn194_medium,0.0,EX_MGlcn194_medium,MGlcn194_medium
 EX_MGlcn194_rl_medium,0.0,EX_MGlcn194_rl_medium,MGlcn194_rl_medium
 EX_MGlcn195_medium,0.0,EX_MGlcn195_medium,MGlcn195_medium
@@ -380,13 +380,13 @@ EX_T_antigen_medium,0.0,EX_T_antigen_medium,T_antigen_medium
 EX_Tn_antigen_medium,0.0,EX_Tn_antigen_medium,Tn_antigen_medium
 EX_Tyr_ggn_medium,0.0,EX_Tyr_ggn_medium,Tyr_ggn_medium
 EX__12ppd_S_medium,0.0,EX__12ppd_S_medium,_12ppd_S_medium
-EX__3mop_medium,-108.72254525238749,EX__3mop_medium,_3mop_medium
+EX__3mop_medium,-108.72254525244306,EX__3mop_medium,_3mop_medium
 EX__4abut_medium,0.0,EX__4abut_medium,_4abut_medium
 EX__4abz_medium,0.0,EX__4abz_medium,_4abz_medium
 EX__5mthf_medium,0.0,EX__5mthf_medium,_5mthf_medium
-EX_ac_medium,-960.4224275696006,EX_ac_medium,ac_medium
+EX_ac_medium,-960.4224275696015,EX_ac_medium,ac_medium
 EX_acgal_medium,0.0,EX_acgal_medium,acgal_medium
-EX_acgam_medium,-283.0908097267242,EX_acgam_medium,acgam_medium
+EX_acgam_medium,-283.09080972683694,EX_acgam_medium,acgam_medium
 EX_acnam2a6agal_medium,0.0,EX_acnam2a6agal_medium,acnam2a6agal_medium
 EX_acnam_medium,0.0,EX_acnam_medium,acnam_medium
 EX_adn_medium,0.0,EX_adn_medium,adn_medium
@@ -394,7 +394,7 @@ EX_adocbl_medium,0.0,EX_adocbl_medium,adocbl_medium
 EX_agal1b3agal_medium,0.0,EX_agal1b3agal_medium,agal1b3agal_medium
 EX_agam1b3agal_medium,0.0,EX_agam1b3agal_medium,agam1b3agal_medium
 EX_agam1b6agal_medium,0.0,EX_agam1b6agal_medium,agam1b6agal_medium
-EX_ala_L_medium,-438.8504907998424,EX_ala_L_medium,ala_L_medium
+EX_ala_L_medium,-438.85049079978734,EX_ala_L_medium,ala_L_medium
 EX_alaasp_medium,0.0,EX_alaasp_medium,alaasp_medium
 EX_alaglu_medium,0.0,EX_alaglu_medium,alaglu_medium
 EX_alagly_medium,0.0,EX_alagly_medium,alagly_medium
@@ -428,7 +428,7 @@ EX_core8_medium,0.0,EX_core8_medium,core8_medium
 EX_cro4_medium,0.0,EX_cro4_medium,cro4_medium
 EX_cys_L_medium,0.0,EX_cys_L_medium,cys_L_medium
 EX_dad_2_medium,0.0,EX_dad_2_medium,dad_2_medium
-EX_dcyt_medium,-22.094309565628922,EX_dcyt_medium,dcyt_medium
+EX_dcyt_medium,-22.094309565629434,EX_dcyt_medium,dcyt_medium
 EX_dextran40_medium,0.0,EX_dextran40_medium,dextran40_medium
 EX_dextrin_medium,0.0,EX_dextrin_medium,dextrin_medium
 EX_dgchol_medium,0.0,EX_dgchol_medium,dgchol_medium
@@ -441,7 +441,7 @@ EX_ethso3_medium,0.0,EX_ethso3_medium,ethso3_medium
 EX_f1a_medium,0.0,EX_f1a_medium,f1a_medium
 EX_f1a_rl_medium,0.0,EX_f1a_rl_medium,f1a_rl_medium
 EX_fecrm_medium,0.0,EX_fecrm_medium,fecrm_medium
-EX_for_medium,-639.1639247197966,EX_for_medium,for_medium
+EX_for_medium,-639.1639247197962,EX_for_medium,for_medium
 EX_fru_medium,0.0,EX_fru_medium,fru_medium
 EX_fuc_L_medium,0.0,EX_fuc_L_medium,fuc_L_medium
 EX_gal1a3acgal_medium,0.0,EX_gal1a3acgal_medium,gal1a3acgal_medium
@@ -457,10 +457,10 @@ EX_glc_D_medium,0.0,EX_glc_D_medium,glc_D_medium
 EX_glcmannan_medium,0.0,EX_glcmannan_medium,glcmannan_medium
 EX_glcur_medium,0.0,EX_glcur_medium,glcur_medium
 EX_glu_L_medium,-500.0,EX_glu_L_medium,glu_L_medium
-EX_gly_medium,-499.0841214669917,EX_gly_medium,gly_medium
+EX_gly_medium,-499.08412146699186,EX_gly_medium,gly_medium
 EX_glyasn_medium,0.0,EX_glyasn_medium,glyasn_medium
 EX_glyasp_medium,0.0,EX_glyasp_medium,glyasp_medium
-EX_glyc_medium,-0.7813070113773046,EX_glyc_medium,glyc_medium
+EX_glyc_medium,-0.781307011377305,EX_glyc_medium,glyc_medium
 EX_glycys_medium,0.0,EX_glycys_medium,glycys_medium
 EX_glygln_medium,0.0,EX_glygln_medium,glygln_medium
 EX_glyglu_medium,0.0,EX_glyglu_medium,glyglu_medium
@@ -479,14 +479,14 @@ EX_gsn_medium,0.0,EX_gsn_medium,gsn_medium
 EX_gthox_medium,0.0,EX_gthox_medium,gthox_medium
 EX_gthrd_medium,0.0,EX_gthrd_medium,gthrd_medium
 EX_gua_medium,0.0,EX_gua_medium,gua_medium
-EX_h2_medium,-336.929890454865,EX_h2_medium,h2_medium
+EX_h2_medium,-336.9298904548666,EX_h2_medium,h2_medium
 EX_h2o_medium,-517.6798538143958,EX_h2o_medium,h2o_medium
 EX_h_medium,0.0,EX_h_medium,h_medium
 EX_hdca_medium,0.0,EX_hdca_medium,hdca_medium
 EX_hexs_medium,0.0,EX_hexs_medium,hexs_medium
 EX_hg2_medium,0.0,EX_hg2_medium,hg2_medium
-EX_his_L_medium,-32.342212425138484,EX_his_L_medium,his_L_medium
-EX_hxan_medium,-33.08329446769862,EX_hxan_medium,hxan_medium
+EX_his_L_medium,-32.34221242514023,EX_his_L_medium,his_L_medium
+EX_hxan_medium,-33.08329446770037,EX_hxan_medium,hxan_medium
 EX_indole_medium,0.0,EX_indole_medium,indole_medium
 EX_ins_medium,0.0,EX_ins_medium,ins_medium
 EX_inulin_medium,0.0,EX_inulin_medium,inulin_medium
@@ -519,9 +519,9 @@ EX_mops_medium,0.0,EX_mops_medium,mops_medium
 EX_mqn7_medium,0.0,EX_mqn7_medium,mqn7_medium
 EX_mso3_medium,0.0,EX_mso3_medium,mso3_medium
 EX_na1_medium,0.0,EX_na1_medium,na1_medium
-EX_nh4_medium,-560.3336799033917,EX_nh4_medium,nh4_medium
+EX_nh4_medium,-560.3336799033921,EX_nh4_medium,nh4_medium
 EX_ocdca_medium,0.0,EX_ocdca_medium,ocdca_medium
-EX_pac_medium,-40.78538879665737,EX_pac_medium,pac_medium
+EX_pac_medium,-40.7853887966577,EX_pac_medium,pac_medium
 EX_pb_medium,0.0,EX_pb_medium,pb_medium
 EX_pect_medium,0.0,EX_pect_medium,pect_medium
 EX_pecticgal_medium,0.0,EX_pecticgal_medium,pecticgal_medium
@@ -546,7 +546,7 @@ EX_starch1200_medium,0.0,EX_starch1200_medium,starch1200_medium
 EX_strch1_medium,0.0,EX_strch1_medium,strch1_medium
 EX_strch2_medium,0.0,EX_strch2_medium,strch2_medium
 EX_stys_medium,0.0,EX_stys_medium,stys_medium
-EX_succ_medium,-218.3747231080216,EX_succ_medium,succ_medium
+EX_succ_medium,-218.3747231081345,EX_succ_medium,succ_medium
 EX_sucr_medium,0.0,EX_sucr_medium,sucr_medium
 EX_sulfac_medium,0.0,EX_sulfac_medium,sulfac_medium
 EX_taur_medium,0.0,EX_taur_medium,taur_medium
@@ -560,4 +560,4 @@ EX_uri_medium,0.0,EX_uri_medium,uri_medium
 EX_xan_medium,0.0,EX_xan_medium,xan_medium
 EX_xyl_D_medium,0.0,EX_xyl_D_medium,xyl_D_medium
 EX_xyluglc_medium,0.0,EX_xyluglc_medium,xyluglc_medium
-community_biomass,-60.65742112217199,community_biomass,cpd11416_medium
+community_biomass,-60.65742112217202,community_biomass,cpd11416_medium
