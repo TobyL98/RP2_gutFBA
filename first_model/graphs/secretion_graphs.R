@@ -10,7 +10,7 @@ library(tidyr)
 library(stringr)
 library(ggplot2)
 library(grid)
-library(patchwork)
+library(gridExtra)
 
 # REMEMBER TO SET WORKING DIRECTORY
 
