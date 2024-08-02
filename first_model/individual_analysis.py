@@ -55,6 +55,7 @@ def main():
 
     for sample_num in random_samples:
         start_time = time.time()
+        print("Running sample{0}".format(sample_num))
         # get df of individuals abundance
         abundance_df = extract_individual(input_df, all_models_fp, threshold, sample_num)
         # output directory
