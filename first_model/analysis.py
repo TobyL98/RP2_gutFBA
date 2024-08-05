@@ -113,9 +113,9 @@ def abundance_dict(df_path, FBA_models_path, matlab):
     if isinstance(df_path, pd.DataFrame):
         df = df_path
     else:
-        d_type = {"average_abundance": float}
+        d_type = {"abundance": float}
         df = pd.read_csv(df_path, sep = ",", dtype = d_type)
-    abun_df = df.set_index('Genus')['average_abundance']
+    abun_df = df.set_index('Genus')['abundance']
     abun_dict = abun_df.to_dict()
 
     # checking model available for all bacteria in dictionary

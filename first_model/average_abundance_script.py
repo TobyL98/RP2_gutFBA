@@ -21,15 +21,15 @@ def average_abundance(df, cut_off):
     print("Pre-step 1: Generating the average abundance dataframe at cut_off {0}".format(cut_off))
     print("#############################")
 
-    df['average_abundance'] = df.iloc[:, 2:].mean(axis = 1)
-    df['average_abundance'] = df['average_abundance'] / sum(df['average_abundance'])
+    df['abundance'] = df.iloc[:, 2:].mean(axis = 1)
+    df['abundance'] = df['abundance'] / sum(df['abundance'])
     
     # remove individual columns
-    df = df.loc[:, ['Genus', 'species', 'average_abundance']]
+    df = df.loc[:, ['Genus', 'species', 'abundance']]
     
     # cumalative abundance
-    df = df.sort_values(by = ['average_abundance'], ascending = False)
-    df['cumalative_abundance'] = df['average_abundance'].cumsum()
+    df = df.sort_values(by = ['abundance'], ascending = False)
+    df['cumalative_abundance'] = df['abundance'].cumsum()
     
     df.to_csv('checks.csv')
     df = df.loc[df['cumalative_abundance'] <= cut_off]

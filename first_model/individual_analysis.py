@@ -36,13 +36,13 @@ def main():
     '''Runs the main code for analysis'''
 
     # required inputs
-    input_path = Path("Outputs/healthy_df_out.csv")
+    input_path = Path("Outputs/Stage_I_II_df_out.csv")
     input_df = pd.read_csv(input_path, sep = ',')
 
     all_models_fp = Path("models")
     run_models_fp = Path("models_to_run_2")
     diet_medium_fp = Path("diet_info/average_EU_fluxes.tsv")
-    overall_output_fp = Path("final_results/variation_healthy")
+    overall_output_fp = Path("final_results/variation_CRC")
     matlab = False
     threshold = 0.95
     num_samples = 5
@@ -51,15 +51,18 @@ def main():
     np.random.seed(42)
     overall_samples_num = input_df.shape[1]
     # starts at 3 to avoid species and genus columns
-    random_samples = np.random.randint(3, overall_samples_num, size=5)
+    sample_range = range(3, overall_samples_num)
+    random_samples = np.random.choice(sample_range, size=10, replace = False)
+    print(random_samples)
 
-    for sample_num in random_samples:
+    for sample_num in random_samples[8:]:
         start_time = time.time()
-        print("Running sample{0}".format(sample_num))
+        print("Running sample {0}".format(sample_num))
         # get df of individuals abundance
         abundance_df = extract_individual(input_df, all_models_fp, threshold, sample_num)
         # output directory
         output_dir_path = overall_output_fp / r"sample_{0}".format(sample_num)
+        output_dir_path.mkdir()
 
         # run analysis
         # getting correct models
