@@ -9,6 +9,9 @@ library(ggplot2)
 library(grid)
 library(gridExtra)
 
+setwd('C:/Users/tobyl/OneDrive - The University of Manchester/Bioinformatics Masters/Research Project 2/development/RP2_gutFBA/first_model')
+getwd()
+
 spec_diff_df <- read.csv("final_results/spec_flux_diff.csv")
 
 # sorting the dataframe
@@ -23,7 +26,7 @@ spec_diff_bar <- ggplot(spec_diff_df,
                             y = reorder(Species, percentage_flux_diff),
                             fill = Health_or_CRC)) +
   geom_col() +
-  labs(y = "Species",
+  labs(y = "Genus",
        x = "Percentage Abundance Difference",
        fill = "Condition") +
   scale_fill_discrete(labels = c("CRC", "Healthy")) +

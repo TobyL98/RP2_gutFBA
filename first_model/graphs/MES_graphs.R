@@ -17,57 +17,59 @@ MES_diff_df <- MES_diff_df %>%
 
 top10_MES_CRC <-  MES_diff_df %>%
   filter(metabolite_id != "o2_medium") %>%
-  slice_head(n = 10)
+  slice_head(n = 15)
 
 metabolite_names <- c("Cholate", "Glutathione", "Adenosine", "Glycerol",
                       "Butyrate", "Urea", "Threonine", "Asparagine",
-                      "Tryptophan", "Arabinose")
+                      "Tryptophan", "Arabinose", "Glycine", "Glyc-3P",
+                      "HPO4", "Glucose", "Arginium")
 top10_MESCRC_bar <- ggplot(top10_MES_CRC, 
                         aes(reorder(x = metabolite_name_x, -MES_diff),
                                           y = -MES_diff)) +
   geom_col(fill = 'maroon') +
+  coord_flip() +
   labs(x = "Metabolite", 
        y = "MES Difference",
-       title = "CRC") +
+       title = "CRC",
+       tag = "B") +
   scale_x_discrete(labels = metabolite_names) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   theme_bw() +
-  theme(axis.text.x = element_text(angle = 30, vjust = 1, hjust=1),
+  theme(#axis.text.x = element_text(angle = 30, vjust = 1, hjust=1),
     axis.text = element_text(size = 16),
-    axis.title = element_blank(),
+    axis.text.x = element_text(hjust = 0.7),
+    axis.title.y = element_text(size = 18),
+    axis.title.x = element_blank(),
     title = element_text(size = 18)
   )
 
 top10_MESCRC_bar
 
 top10_MES_healthy <- MES_diff_df %>%
-  slice_tail(n = 10)
+  slice_tail(n = 15)
 
-metabolite_names1 <- c("NANA", "MGlcn191", "MGlcn186", "GlcNAc", "Citrate", 
-                       "Methionine", "MGlcn153", "Galactosamine", "2,6-DAP", 
-                       "Deoxyguanosine")
+metabolite_names1 <- c("sT antigen", "MGlcn116", "MGlcn187",
+                       "MGlcn190", "H2S", "NANA", "MGlcn191", "MGlcn186", 
+                       "GlcNAc", "Citrate", "Methionine", "MGlcn153"
+                       , "Galactosamine", "2,6-DAP", "Deoxyguanosine")
 top10_MEShealthy_bar <- ggplot(top10_MES_healthy, 
                                aes(reorder(x = metabolite_name_x, MES_diff),
                                    y = MES_diff)) +
   geom_col(fill = 'blue') +
   labs(x = "Metabolite", 
        y = "MES Difference",
-       title = "Healthy") +
+       title = "Healthy",
+       tag = "C") +
+  coord_flip() +
   scale_x_discrete(labels = metabolite_names1) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   theme_bw() +
-  theme(axis.text.x = element_text(angle = 30, vjust = 1, hjust=1),
+  theme(#axis.text.x = element_text(angle = 30, vjust = 1, hjust=1),
         axis.text = element_text(size = 16),
         axis.title = element_blank(),
         title = element_text(size = 18)
   )
 top10_MEShealthy_bar
-
-plot <- grid.arrange(top10_MESCRC_bar, top10_MEShealthy_bar, 
-                     left = textGrob("MES Difference", rot = 90, gp = gpar(fontsize = 20)), 
-                     bottom = textGrob("Metabolite", gp = gpar(fontsize = 20)))
-plot
-
 
 ###############
 # density plot
@@ -84,7 +86,8 @@ density_plot <- ggplot(compare_MES_df, aes(x = value
   labs(x = "Metabolic Exchange Score (MES)",
        y = "Density",
        fill = "Condition",
-       color = "Condition") +
+       color = "Condition",
+       tag = "A") +
   geom_density(alpha = 0.3) +
   scale_fill_discrete(labels = c("CRC", "Healthy")) +
   scale_color_discrete(labels = c("CRC", "Healthy")) +
@@ -93,9 +96,23 @@ density_plot <- ggplot(compare_MES_df, aes(x = value
   theme_bw() +
   theme(axis.text = element_text(size = 16),
         axis.title = element_text(size = 18),
+        plot.tag = element_text(size = 20),
         legend.text = element_text(size = 16),
         legend.title = element_text(size = 18),
-        legend.position = (c(0.8, 0.6)))
+        legend.position = (c(0.8, 0.7)))
 
-density_plot
+
+layout <- matrix(c(1, 1,
+                   2, 3,
+                   2, 3), 
+                 nrow = 3,
+                 byrow = TRUE) 
+plot <- grid.arrange(density_plot,
+                     top10_MESCRC_bar, 
+                     top10_MEShealthy_bar,
+                     layout_matrix = layout,
+                     bottom = textGrob("MES Difference", gp = gpar(fontsize = 20)))
+plot
+
+
   

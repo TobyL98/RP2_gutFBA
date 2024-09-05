@@ -16,6 +16,7 @@ def extract_individual(df, FBA_models_path, cut_off, individual_num):
     Then creates the dictionary which cane be usedf for analysis'''
     
     sample_df = df.iloc[: , [0, 1, individual_num]]
+    print(sample_df.columns)
 
     # rename final column to abundance
     sample_df = sample_df.rename(columns = {sample_df.columns[2]: "abundance"})
@@ -36,7 +37,7 @@ def main():
     '''Runs the main code for analysis'''
 
     # required inputs
-    input_path = Path("Outputs/Stage_I_II_df_out.csv")
+    input_path = Path("Outputs/healthy_df_out.csv")
     input_df = pd.read_csv(input_path, sep = ',')
 
     all_models_fp = Path("models")
@@ -55,7 +56,7 @@ def main():
     random_samples = np.random.choice(sample_range, size=10, replace = False)
     print(random_samples)
 
-    for sample_num in random_samples[8:]:
+    for sample_num in random_samples:
         start_time = time.time()
         print("Running sample {0}".format(sample_num))
         # get df of individuals abundance
@@ -86,6 +87,5 @@ def main():
         with open(time_filepath, "w") as f:
             f.write("Time taken to run:{0}".format(elapsed_time))
         f.close()
-
 if __name__ == "__main__":
     main()

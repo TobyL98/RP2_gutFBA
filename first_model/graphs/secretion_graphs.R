@@ -12,6 +12,8 @@ library(ggplot2)
 library(grid)
 library(gridExtra)
 
+setwd('C:/Users/tobyl/OneDrive - The University of Manchester/Bioinformatics Masters/Research Project 2/development/RP2_gutFBA/first_model')
+getwd()
 # REMEMBER TO SET WORKING DIRECTORY
 
 sec_diff_df <- read.csv("final_results/secFlux_diff.csv")
@@ -40,7 +42,9 @@ CRC_bar <- ggplot(top_10_CRC, aes(x = reorder(metabolite, flux_diff),
                                    y = -value
                                   ,fill = name)) +
   geom_col(position = "dodge") +
-  labs(y = "", x = "Metabolite", fill = "Condition") +
+  labs(y = "", x = "Metabolite",
+       fill = "Condition",
+       tag = "A") +
   scale_fill_discrete(labels = c("CRC", "Healthy")) +
   scale_x_discrete(labels = x_metabolite_names) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
@@ -50,6 +54,7 @@ CRC_bar <- ggplot(top_10_CRC, aes(x = reorder(metabolite, flux_diff),
         axis.title.y = element_blank(),
         axis.title.x = element_blank(),
         axis.title = element_text(size = 18),
+        plot.tag = element_text(size = 18),
         legend.text = element_text(size = 14),
         legend.title = element_text(size = 16),
         legend.position = (c(0.2, 0.6)))
@@ -66,7 +71,8 @@ x_metabolite_names2 = c("Phe", "Galactose", "Succinate", "Indole",
 CRC_diff_bar <- ggplot(top_10_perc_CRC, aes(x = reorder(metabolite, -perc_flux_diff) ,
                                        y = -perc_flux_diff)) +
   geom_col(fill = "#00BA38") +
-  labs(y = "", x = "Metabolite") +
+  labs(y = "", x = "Metabolite",
+       tag = "B") +
   scale_x_discrete(labels = x_metabolite_names2) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   theme_bw() +
@@ -75,7 +81,8 @@ CRC_diff_bar <- ggplot(top_10_perc_CRC, aes(x = reorder(metabolite, -perc_flux_d
         axis.title.y = element_text(angle = 90, vjust = 0.4, 
                                     hjust = 0.5),
         axis.title.x = element_blank(),
-        axis.title = element_text(size = 18))
+        axis.title = element_text(size = 18),
+        plot.tag = element_text(size = 18))
 
 # Plotting the top 10 differences towards healthy
 top_10_healthy <- sorted_sec_diff_df %>%
@@ -90,7 +97,10 @@ healthy_bar <- ggplot(top_10_healthy, aes(x = reorder(metabolite, -flux_diff),
                                   y = -value
                                   ,fill = name)) +
   geom_col(position = "dodge") +
-  labs(y = "Secretion Flux", x = "Metabolite", fill = "Condition") +
+  labs(y = "Secretion Flux", 
+       x = "Metabolite", 
+       fill = "Condition",
+       tag = "C") +
   scale_fill_manual(values = c("#999999", "#D55E00"), 
                                labels = c("CRC", "Healthy")) +
   scale_x_discrete(labels = x_metabolite_names3) +
@@ -100,6 +110,7 @@ healthy_bar <- ggplot(top_10_healthy, aes(x = reorder(metabolite, -flux_diff),
         axis.text = element_text(size = 16),
         axis.title.y = element_blank(),
         axis.title.x = element_blank(),
+        plot.tag = element_text(size = 18),
         legend.text = element_text(size = 14),
         legend.title = element_text(size = 16),
         legend.position = (c(0.2, 0.6)))
@@ -120,7 +131,9 @@ x_metabolite_names4 <- c("Acetate", "Ammonium", "Formate", "Butyrate",
 healthy_diff_bar <- ggplot(top_10_perc_healthy, aes(x = reorder(metabolite, perc_flux_diff) ,
                                             y = perc_flux_diff)) +
   geom_col(fill = "#CC79A7") +
-  labs(y = "Secretion Flux Difference (%)", x = "Metabolite") +
+  labs(y = "Secretion Flux Difference (%)", 
+       x = "Metabolite",
+       tag = "D") +
   scale_x_discrete(labels = x_metabolite_names4) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   theme_bw() +
@@ -128,7 +141,9 @@ healthy_diff_bar <- ggplot(top_10_perc_healthy, aes(x = reorder(metabolite, perc
         axis.text = element_text(size = 16),
         axis.title.y = element_text(angle = 90, vjust = 1.5, 
                                     hjust = 0, size = 20),
-        axis.title.x = element_blank())
+        axis.title.x = element_blank(),
+        plot.tag = element_text(size = 18),
+        plot.tag.position = c(0.1, 1.1))
 
        
 layout <- matrix(c(1, 3, 
@@ -138,8 +153,9 @@ layout <- matrix(c(1, 3,
                    2, 4), nrow = 2)
 plot <- grid.arrange(CRC_bar, CRC_diff_bar, healthy_bar, healthy_diff_bar,
              layout_matrix = layout, 
-             left = textGrob("Secretion Flux", rot = 90, gp = gpar(fontsize = 20)
+             left = textGrob("Secretion Flux (mmol/d)", rot = 90, gp = gpar(fontsize = 20)
                              ), 
              bottom = textGrob("Metabolite", gp = gpar(fontsize = 20)
                                )
              )
+
